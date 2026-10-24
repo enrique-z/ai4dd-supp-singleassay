@@ -1,0 +1,610 @@
+{
+  "ledger_rows": {
+    "f1::n_rows": {
+      "value": 4200,
+      "claim_id": "f1::n_rows",
+      "source": "t2_truncation_provenance.json:q1.total_rows_assay",
+      "must_print": false
+    },
+    "f1::accession_n": {
+      "value": 4200,
+      "claim_id": "f1::accession_n",
+      "source": "verified",
+      "must_print": false
+    },
+    "f1::accession_pct": {
+      "value": 100.0,
+      "claim_id": "f1::accession_pct",
+      "source": "verified:4200/4200",
+      "must_print": false
+    },
+    "f1::n_resolve": {
+      "value": 4195,
+      "claim_id": "f1::n_resolve",
+      "source": "verified:two_independent_rederivations",
+      "must_print": false
+    },
+    "f1::n_inchikey_agree": {
+      "value": 4194,
+      "claim_id": "f1::n_inchikey_agree",
+      "source": "verified",
+      "must_print": false
+    },
+    "f1::inchikey_agree_pct": {
+      "value": 99.86,
+      "claim_id": "f1::inchikey_agree_pct",
+      "source": "verified:4194/4200=99.857pct_rounded",
+      "must_print": false
+    },
+    "f1::n_mismatch": {
+      "value": 1,
+      "claim_id": "f1::n_mismatch",
+      "source": "verified:CHEMBL421_stereo_layer",
+      "must_print": false
+    },
+    "f1::n_unresolvable": {
+      "value": 5,
+      "claim_id": "f1::n_unresolvable",
+      "source": "t2_truncation_provenance.json:q3.in_benchmark_not_assay[in_chembl=false]_count=5",
+      "must_print": false
+    },
+    "f2::n_in_assay": {
+      "value": 4183,
+      "claim_id": "f2::n_in_assay",
+      "source": "verified",
+      "must_print": true
+    },
+    "f2::in_assay_pct": {
+      "value": 99.6,
+      "claim_id": "f2::in_assay_pct",
+      "source": "verified:4183/4200=99.595pct_rounded",
+      "must_print": true
+    },
+    "f2::n_logd_assays": {
+      "value": 2889,
+      "claim_id": "f2::n_logd_assays",
+      "source": "verified:2862_LogD+27_LogD7.4",
+      "must_print": false
+    },
+    "f2::n_logd_assays_logd": {
+      "value": 2862,
+      "claim_id": "f2::n_logd_assays_logd",
+      "source": "verified",
+      "must_print": false
+    },
+    "f2::n_logd_assays_logd74": {
+      "value": 27,
+      "claim_id": "f2::n_logd_assays_logd74",
+      "source": "verified",
+      "must_print": false
+    },
+    "f2::source_n_mols": {
+      "value": 4196,
+      "claim_id": "f2::source_n_mols",
+      "source": "t2_truncation_provenance.json:q3.n_assay_distinct_mols=4196",
+      "must_print": false
+    },
+    "f2::runner_up_overall": {
+      "value": 360,
+      "claim_id": "f2::runner_up_overall",
+      "source": "verified",
+      "must_print": false
+    },
+    "f2::size_ratio_overall": {
+      "value": 11.66,
+      "claim_id": "f2::size_ratio_overall",
+      "source": "verified",
+      "must_print": false
+    },
+    "f2::runner_up_benchmark": {
+      "value": 80,
+      "claim_id": "f2::runner_up_benchmark",
+      "source": "verified:80_not_8",
+      "must_print": false
+    },
+    "f3::n_row_agree": {
+      "value": 4183,
+      "claim_id": "f3::n_row_agree",
+      "source": "verified",
+      "must_print": false
+    },
+    "f3::n_row_denom": {
+      "value": 4186,
+      "claim_id": "f3::n_row_denom",
+      "source": "verified",
+      "must_print": false
+    },
+    "f3::row_agree_pct": {
+      "value": 99.93,
+      "claim_id": "f3::row_agree_pct",
+      "source": "verified:4183/4186=99.928pct_rounded",
+      "must_print": false
+    },
+    "f3::n_discrepant": {
+      "value": 3,
+      "claim_id": "f3::n_discrepant",
+      "source": "verified",
+      "must_print": false
+    },
+    "f4::val_min": {
+      "value": -1.5,
+      "claim_id": "f4::val_min",
+      "source": "t2_truncation_provenance.json:q1.columns[0].min=-1.5",
+      "must_print": false
+    },
+    "f4::val_max": {
+      "value": 4.5,
+      "claim_id": "f4::val_max",
+      "source": "t2_truncation_provenance.json:q1.columns[0].max=4.5",
+      "must_print": false
+    },
+    "f4::n_below_lo": {
+      "value": 0,
+      "claim_id": "f4::n_below_lo",
+      "source": "t2_truncation_provenance.json:q1.columns[0].count_below_lo=0",
+      "must_print": false
+    },
+    "f4::n_above_hi": {
+      "value": 0,
+      "claim_id": "f4::n_above_hi",
+      "source": "t2_truncation_provenance.json:q1.columns[0].count_above_hi=0",
+      "must_print": false
+    },
+    "f4::n_at_lo": {
+      "value": 1,
+      "claim_id": "f4::n_at_lo",
+      "source": "verified",
+      "must_print": false
+    },
+    "f4::n_at_hi": {
+      "value": 4,
+      "claim_id": "f4::n_at_hi",
+      "source": "verified",
+      "must_print": false
+    },
+    "f4::n_adj_lo_bin": {
+      "value": 7,
+      "claim_id": "f4::n_adj_lo_bin",
+      "source": "verified",
+      "must_print": false
+    },
+    "f4::n_adj_hi_bin": {
+      "value": 8,
+      "claim_id": "f4::n_adj_hi_bin",
+      "source": "verified",
+      "must_print": false
+    },
+    "f4::val_median": {
+      "value": 2.36,
+      "claim_id": "f4::val_median",
+      "source": "verified",
+      "must_print": false
+    },
+    "f4::val_mean": {
+      "value": 2.186,
+      "claim_id": "f4::val_mean",
+      "source": "verified",
+      "must_print": false
+    },
+    "t2::n_out_of_range": {
+      "value": 0,
+      "claim_id": "t2::n_out_of_range",
+      "source": "t2_truncation_provenance.json:q1.columns[0].count_below_lo+count_above_hi=0",
+      "must_print": true
+    },
+    "t2::n_relation_null": {
+      "value": 4200,
+      "claim_id": "t2::n_relation_null",
+      "source": "t2_truncation_provenance.json:q2.standard_relation[null].count=4200",
+      "must_print": false
+    },
+    "t2::n_validity_null": {
+      "value": 4200,
+      "claim_id": "t2::n_validity_null",
+      "source": "t2_truncation_provenance.json:q2.data_validity_comment[null].count=4200",
+      "must_print": false
+    },
+    "t2::n_assays_with_decl": {
+      "value": 1,
+      "claim_id": "t2::n_assays_with_decl",
+      "source": "t2_truncation_provenance.json:q5.n_assays_with_range_in_description=1",
+      "must_print": false
+    },
+    "t2::n_logd74_other": {
+      "value": 21,
+      "claim_id": "t2::n_logd74_other",
+      "source": "verified_2026-09-05:logD7.4_records_for_benchmark_compounds_in_other_assays_excluding_1369278=21",
+      "must_print": true
+    },
+    "t1::arm_a_coverage_n": {
+      "value": 834,
+      "claim_id": "t1::arm_a_coverage_n",
+      "source": "t1_canonical.json:task3_arm_results.arm_a_including_1369278.covered_n=834",
+      "must_print": false
+    },
+    "t1::arm_a_coverage_pct": {
+      "value": 99.29,
+      "claim_id": "t1::arm_a_coverage_pct",
+      "source": "t1_canonical.json:task3_arm_results.arm_a_including_1369278.covered_pct=99.29",
+      "must_print": false
+    },
+    "t1::arm_a_covered_mae": {
+      "value": 0.0172,
+      "claim_id": "t1::arm_a_covered_mae",
+      "source": "t1_canonical.json:task3.arm_a.covered_subset_metrics.mae=0.017209_rounded",
+      "must_print": false
+    },
+    "t1::arm_a_covered_rmse": {
+      "value": 0.0974,
+      "claim_id": "t1::arm_a_covered_rmse",
+      "source": "t1_canonical.json:task3.arm_a.covered_subset_metrics.rmse=0.097424_rounded",
+      "must_print": false
+    },
+    "t1::arm_a_covered_r": {
+      "value": 0.9966,
+      "claim_id": "t1::arm_a_covered_r",
+      "source": "t1_canonical.json:task3.arm_a.covered_subset_metrics.pearson_r=0.996624_rounded",
+      "must_print": false
+    },
+    "t1::arm_a_full_mae": {
+      "value": 0.024,
+      "claim_id": "t1::arm_a_full_mae",
+      "source": "t1_canonical.json:task3.arm_a.full_fold_metrics.mae=0.02399_rounded",
+      "must_print": true
+    },
+    "t1::arm_a_full_rmse": {
+      "value": 0.1469,
+      "claim_id": "t1::arm_a_full_rmse",
+      "source": "t1_canonical.json:task3.arm_a.full_fold_metrics.rmse=0.146941_rounded",
+      "must_print": false
+    },
+    "t1::arm_a_full_r": {
+      "value": 0.9923,
+      "claim_id": "t1::arm_a_full_r",
+      "source": "t1_canonical.json:task3.arm_a.full_fold_metrics.pearson_r=0.99231_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_coverage_n": {
+      "value": 226,
+      "claim_id": "t1::arm_b_coverage_n",
+      "source": "t1_canonical.json:task3.arm_b_excluding_1369278.covered_n=226",
+      "must_print": false
+    },
+    "t1::arm_b_coverage_pct": {
+      "value": 26.9,
+      "claim_id": "t1::arm_b_coverage_pct",
+      "source": "t1_canonical.json:task3.arm_b_excluding_1369278.covered_pct=26.9",
+      "must_print": false
+    },
+    "t1::arm_b_n_assays": {
+      "value": 122,
+      "claim_id": "t1::arm_b_n_assays",
+      "source": "t1_canonical.json:gap_closure_2026_09_05.task2_arm_b_assay_count.n_distinct_assays_def_i=122",
+      "must_print": false
+    },
+    "t1::arm_b_covered_mae": {
+      "value": 0.1242,
+      "claim_id": "t1::arm_b_covered_mae",
+      "source": "t1_canonical.json:task3.arm_b.covered_subset_metrics.mae=0.124186_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_covered_rmse": {
+      "value": 0.3692,
+      "claim_id": "t1::arm_b_covered_rmse",
+      "source": "t1_canonical.json:task3.arm_b.covered_subset_metrics.rmse=0.369186_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_covered_r": {
+      "value": 0.9466,
+      "claim_id": "t1::arm_b_covered_r",
+      "source": "t1_canonical.json:task3.arm_b.covered_subset_metrics.pearson_r=0.946587_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_full_mae": {
+      "value": 0.764,
+      "claim_id": "t1::arm_b_full_mae",
+      "source": "t1_canonical.json:task3.arm_b.full_fold_metrics.mae=0.763971_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_full_rmse": {
+      "value": 1.047,
+      "claim_id": "t1::arm_b_full_rmse",
+      "source": "t1_canonical.json:task3.arm_b.full_fold_metrics.rmse=1.046999_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_full_r": {
+      "value": 0.4752,
+      "claim_id": "t1::arm_b_full_r",
+      "source": "t1_canonical.json:task3.arm_b.full_fold_metrics.pearson_r=0.475165_rounded",
+      "must_print": false
+    },
+    "t1::mech_src_covered": {
+      "value": 834,
+      "claim_id": "t1::mech_src_covered",
+      "source": "t1_canonical.json:gap_closure_2026_09_05.task1_mechanism_check.a_covered_with_any_value_from_1369278=834",
+      "must_print": true
+    },
+    "t1::mech_exact_src": {
+      "value": 834,
+      "claim_id": "t1::mech_exact_src",
+      "source": "t1_canonical.json:gap_closure_2026_09_05.task1_mechanism_check.b_exact_assay_1369278_only_median=834",
+      "must_print": false
+    },
+    "t1::mech_exact_pooled": {
+      "value": 689,
+      "claim_id": "t1::mech_exact_pooled",
+      "source": "t1_canonical.json:gap_closure_2026_09_05.task1_mechanism_check.c_exact_pooled_all_assays_median=689",
+      "must_print": false
+    },
+    "t1::sensitivity_mae_hi": {
+      "value": 0.0488,
+      "claim_id": "t1::sensitivity_mae_hi",
+      "source": "t1_canonical.json:task4_sensitivity.arm_a_mae_max=0.048774_rounded",
+      "must_print": false
+    },
+    "t1::sensitivity_cov_lo": {
+      "value": 20.7,
+      "claim_id": "t1::sensitivity_cov_lo",
+      "source": "t1_canonical.json:task4_sensitivity.arm_b_cov_min_pct=20.71_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_k5_mae": {
+      "value": 0.7868,
+      "claim_id": "t1::arm_c_k5_mae",
+      "source": "evidence/t1_arm_c_knn.json:arm_c_results_all_k.5.mae=0.786814_rounded",
+      "must_print": true
+    },
+    "t1::arm_c_k5_rmse": {
+      "value": 1.0431,
+      "claim_id": "t1::arm_c_k5_rmse",
+      "source": "evidence/t1_arm_c_knn.json:arm_c_results_all_k.5.rmse=1.043063_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_k5_r": {
+      "value": 0.5268,
+      "claim_id": "t1::arm_c_k5_r",
+      "source": "evidence/t1_arm_c_knn.json:arm_c_results_all_k.5.pearson_r=0.526841_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_k1_mae": {
+      "value": 0.8869,
+      "claim_id": "t1::arm_c_k1_mae",
+      "source": "evidence/t1_arm_c_knn.json:arm_c_results_all_k.1.mae=0.886893_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_k3_mae": {
+      "value": 0.8041,
+      "claim_id": "t1::arm_c_k3_mae",
+      "source": "evidence/t1_arm_c_knn.json:arm_c_results_all_k.3.mae=0.804083_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_k10_mae": {
+      "value": 0.822,
+      "claim_id": "t1::arm_c_k10_mae",
+      "source": "evidence/t1_arm_c_knn.json:arm_c_results_all_k.10.mae=0.822018_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_nn_median": {
+      "value": 0.59,
+      "claim_id": "t1::arm_c_nn_median",
+      "source": "evidence/t1_arm_c_knn.json:similarity_distribution_k5.median=0.589515_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_nn_n_ge_0p9": {
+      "value": 17,
+      "claim_id": "t1::arm_c_nn_n_ge_0p9",
+      "source": "evidence/t1_arm_c_knn.json:similarity_distribution_k5.n_ge_0p9=17",
+      "must_print": false
+    },
+    "t1::arm_c_nn_pct_ge_0p9": {
+      "value": 2.0,
+      "claim_id": "t1::arm_c_nn_pct_ge_0p9",
+      "source": "evidence/t1_arm_c_knn.json:similarity_distribution_k5.pct_ge_0p9=2.02_rounded",
+      "must_print": false
+    },
+    "t1::arm_c_nn_n_ge_0p7": {
+      "value": 206,
+      "claim_id": "t1::arm_c_nn_n_ge_0p7",
+      "source": "evidence/t1_arm_c_knn.json:similarity_distribution_k5.n_ge_0p7=206",
+      "must_print": false
+    },
+    "t1::arm_c_nn_pct_ge_0p7": {
+      "value": 24.5,
+      "claim_id": "t1::arm_c_nn_pct_ge_0p7",
+      "source": "evidence/t1_arm_c_knn.json:similarity_distribution_k5.pct_ge_0p7=24.52_rounded",
+      "must_print": false
+    },
+    "t1::arm_a_src_covered_mae": {
+      "value": 0.0,
+      "claim_id": "t1::arm_a_src_covered_mae",
+      "source": "evidence/recompute_2026_09_05.json:q1_arm_a.a_source.covered_mae=0.0 (all 834 covered compounds retrieved exactly from assay 1369278)",
+      "must_print": true
+    },
+    "t1::arm_a_src_covered_rmse": {
+      "value": 0.0,
+      "claim_id": "t1::arm_a_src_covered_rmse",
+      "source": "evidence/recompute_2026_09_05.json:q1_arm_a.a_source.covered_rmse=0.0",
+      "must_print": false
+    },
+    "t1::arm_a_src_covered_r": {
+      "value": 1.0,
+      "claim_id": "t1::arm_a_src_covered_r",
+      "source": "evidence/recompute_2026_09_05.json:q1_arm_a.a_source.covered_pearson_r=1.0",
+      "must_print": false
+    },
+    "t1::arm_a_src_full_mae": {
+      "value": 0.0069,
+      "claim_id": "t1::arm_a_src_full_mae",
+      "source": "evidence/recompute_2026_09_05.json:q1_arm_a.a_source.full_mae=0.006905_rounded",
+      "must_print": true
+    },
+    "t1::arm_a_src_full_rmse": {
+      "value": 0.1103,
+      "claim_id": "t1::arm_a_src_full_rmse",
+      "source": "evidence/recompute_2026_09_05.json:q1_arm_a.a_source.full_rmse=0.110309_rounded",
+      "must_print": false
+    },
+    "t1::arm_a_src_full_r": {
+      "value": 0.9957,
+      "claim_id": "t1::arm_a_src_full_r",
+      "source": "evidence/recompute_2026_09_05.json:q1_arm_a.a_source.full_pearson_r=0.995672_rounded",
+      "must_print": false
+    },
+    "t1::arm_b_logd74_n": {
+      "value": 2,
+      "claim_id": "t1::arm_b_logd74_n",
+      "source": "evidence/recompute_2026_09_05.json:q4_arm_b_logd74_only.covered_n=2 (LogD7.4-only assays, 840 test compounds)",
+      "must_print": false
+    },
+    "t1::constant_mae": {
+      "value": 0.9654,
+      "claim_id": "t1::constant_mae",
+      "source": "evidence/recompute_2026_09_05.json:q2_constant_predictor.mae=0.965429_rounded (predicted_value=2.31, n=840)",
+      "must_print": false
+    },
+    "f4::n_at_lo_bin": {
+      "value": 2,
+      "claim_id": "f4::n_at_lo_bin",
+      "source": "evidence/recompute_2026_09_05.json:q7_boundary_bins.at_lower_bound.n=2 (bin [-1.50,-1.45))",
+      "must_print": false
+    },
+    "t1::test_n": {
+      "value": 840,
+      "claim_id": "t1::test_n",
+      "source": "TDC canonical split: PyTDC 1.1.15 seed=42 Murcko scaffolds greedy fill test fold n=840",
+      "must_print": false
+    },
+    "f1::n_inchikey_2d": {
+      "value": 4195,
+      "claim_id": "f1::n_inchikey_2d",
+      "source": "evidence/recompute_2026_09_05.json:q6_inchikey.connectivity_agree=4195 (all resolved compounds agree on connectivity layer)",
+      "must_print": false
+    },
+    "floor::n_ext_records": {
+      "value": 289,
+      "claim_id": "floor::n_ext_records",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1b_individual_records.n_records=289",
+      "must_print": false
+    },
+    "floor::ext_rec_mae": {
+      "value": 0.2261,
+      "claim_id": "floor::ext_rec_mae",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1b_individual_records.mae=0.2261",
+      "must_print": false
+    },
+    "floor::ext_rec_median_abserr": {
+      "value": 0.03,
+      "claim_id": "floor::ext_rec_median_abserr",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1b_individual_records.median_abs_discrepancy=0.03",
+      "must_print": false
+    },
+    "floor::ext_rec_exact_n": {
+      "value": 82,
+      "claim_id": "floor::ext_rec_exact_n",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1b_individual_records.note_on_q25_zero[82_of_289_match_exactly]",
+      "must_print": false
+    },
+    "floor::ext_rec_exact_pct": {
+      "value": 28.4,
+      "claim_id": "floor::ext_rec_exact_pct",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1b_individual_records.note_on_q25_zero[28.4pct_of_289]",
+      "must_print": false
+    },
+    "floor::ext_rec_hi_discrep_n": {
+      "value": 39,
+      "claim_id": "floor::ext_rec_hi_discrep_n",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1c_fraction_above_048.count=39",
+      "must_print": false
+    },
+    "floor::ext_rec_hi_discrep_pct": {
+      "value": 13.49,
+      "claim_id": "floor::ext_rec_hi_discrep_pct",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q1c_fraction_above_048.percentage=13.49",
+      "must_print": false
+    },
+    "f2::n_chembl_logd_records": {
+      "value": 29756,
+      "claim_id": "f2::n_chembl_logd_records",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q2_chembl_wide_logd.total_records=29756",
+      "must_print": false
+    },
+    "f4::n_ext_above_hi": {
+      "value": 2301,
+      "claim_id": "f4::n_ext_above_hi",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q2_chembl_wide_logd.above_4_5.count=2301",
+      "must_print": false
+    },
+    "f4::n_ext_below_lo": {
+      "value": 629,
+      "claim_id": "f4::n_ext_below_lo",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q2_chembl_wide_logd.below_neg1_5.count=629",
+      "must_print": false
+    },
+    "f4::ext_outside_pct": {
+      "value": 9.85,
+      "claim_id": "f4::ext_outside_pct",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q2_chembl_wide_logd.combined_outside.pct=9.85",
+      "must_print": false
+    },
+    "f2::n_logd_assays_ci": {
+      "value": 2892,
+      "claim_id": "f2::n_logd_assays_ci",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q3_case_sensitivity.case_insensitive_count=2892",
+      "must_print": false
+    },
+    "f2::n_resolve_no_logd": {
+      "value": 12,
+      "claim_id": "f2::n_resolve_no_logd",
+      "source": "evidence/interassay_floor_2026_09_05.json:Q4_unmatched_17.n_resolves_but_not_in_assay=12",
+      "must_print": false
+    },
+    "t1::ci_b_full_lo": {
+      "value": 0.716,
+      "claim_id": "t1::ci_b_full_lo",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": true
+    },
+    "t1::ci_b_full_hi": {
+      "value": 0.8127,
+      "claim_id": "t1::ci_b_full_hi",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": true
+    },
+    "t1::ci_b_covered_lo": {
+      "value": 0.0837,
+      "claim_id": "t1::ci_b_covered_lo",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": false
+    },
+    "t1::ci_b_covered_hi": {
+      "value": 0.1754,
+      "claim_id": "t1::ci_b_covered_hi",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": false
+    },
+    "t1::ci_c_lo": {
+      "value": 0.741,
+      "claim_id": "t1::ci_c_lo",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": true
+    },
+    "t1::ci_c_hi": {
+      "value": 0.8339,
+      "claim_id": "t1::ci_c_hi",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": true
+    },
+    "t1::ci_bmc_lo": {
+      "value": -0.0756,
+      "claim_id": "t1::ci_bmc_lo",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": true
+    },
+    "t1::ci_bmc_hi": {
+      "value": 0.0301,
+      "claim_id": "t1::ci_bmc_hi",
+      "source": "analysis/bootstrap_ci.py  ->  evidence/t1_bootstrap_cis.json",
+      "must_print": true
+    }
+  }
+}

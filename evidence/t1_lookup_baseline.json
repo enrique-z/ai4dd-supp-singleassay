@@ -1,0 +1,216 @@
+{
+  "experiment": "t1_lookup_baseline",
+  "split_method": "Bemis-Murcko scaffold split, greedy 70/10/20, deterministic ordering",
+  "split_is_tdc_replication": false,
+  "split_note": "APPROXIMATION of TDC split; tdc package not installed",
+  "fold_sizes": {
+    "train": 2940,
+    "valid": 420,
+    "test": 840
+  },
+  "train_fold_median_y": 2.37,
+  "benchmark_parse_rate": 1.0,
+  "n_benchmark_rows": 4200,
+  "accession_match_sanity": {
+    "matched": 839,
+    "total": 840,
+    "fraction": 0.9988
+  },
+  "source_assay_id": 1369278,
+  "arm_a": {
+    "coverage_n": 836,
+    "coverage_total": 840,
+    "coverage_pct": 99.5238,
+    "covered_mae": 0.0269,
+    "covered_rmse": 0.1512,
+    "covered_r": 0.9925,
+    "covered_n": 836,
+    "full_mae": 0.0329,
+    "full_rmse": 0.1857,
+    "full_r": 0.9886,
+    "full_n": 840,
+    "fallback_value": 2.37
+  },
+  "arm_b": {
+    "coverage_n": 195,
+    "coverage_total": 840,
+    "coverage_pct": 23.2143,
+    "covered_mae": 0.2316,
+    "covered_rmse": 0.5847,
+    "covered_r": 0.9054,
+    "covered_n": 195,
+    "full_mae": 0.7971,
+    "full_rmse": 1.1032,
+    "full_r": 0.4554,
+    "full_n": 840,
+    "fallback_value": 2.37
+  },
+  "diagnostics": {
+    "arm_a_values_per_compound": {
+      "1": 641,
+      "2": 147,
+      "3plus": 48
+    },
+    "arm_a_exact_matches_within_1e9": 716,
+    "arm_a_top5_largest_errors": [
+      {
+        "drug_id": "CHEMBL802",
+        "abs_err": 2.38,
+        "pred": -1.61,
+        "true": 0.77,
+        "inchikey": "ZFMITUMMTDLWHR-UHFFFAOYSA-N"
+      },
+      {
+        "drug_id": "CHEMBL218490",
+        "abs_err": 1.73,
+        "pred": 2.0,
+        "true": 0.27,
+        "inchikey": "IAVUPMFITXYVAF-XPUUQOCRSA-N"
+      },
+      {
+        "drug_id": "CHEMBL808",
+        "abs_err": 1.355,
+        "pred": 3.895,
+        "true": 2.54,
+        "inchikey": "LEZWWPYKPKIXLL-UHFFFAOYSA-N"
+      },
+      {
+        "drug_id": "CHEMBL51085",
+        "abs_err": 1.195,
+        "pred": 2.115,
+        "true": 3.31,
+        "inchikey": "DYEFUKCXAQOFHX-UHFFFAOYSA-N"
+      },
+      {
+        "drug_id": "CHEMBL1329237",
+        "abs_err": 1.035,
+        "pred": 4.405,
+        "true": 3.37,
+        "inchikey": "IHNSNLDESXQRAG-UHFFFAOYSA-N"
+      }
+    ],
+    "arm_b_assay_coverage": [
+      {
+        "assay_id": 821274,
+        "n_compounds": 20
+      },
+      {
+        "assay_id": 25810,
+        "n_compounds": 17
+      },
+      {
+        "assay_id": 839819,
+        "n_compounds": 12
+      },
+      {
+        "assay_id": 16545,
+        "n_compounds": 10
+      },
+      {
+        "assay_id": 23427,
+        "n_compounds": 10
+      },
+      {
+        "assay_id": 800691,
+        "n_compounds": 9
+      },
+      {
+        "assay_id": 543353,
+        "n_compounds": 8
+      },
+      {
+        "assay_id": 741351,
+        "n_compounds": 8
+      },
+      {
+        "assay_id": 759386,
+        "n_compounds": 8
+      },
+      {
+        "assay_id": 786823,
+        "n_compounds": 7
+      },
+      {
+        "assay_id": 446057,
+        "n_compounds": 6
+      },
+      {
+        "assay_id": 572013,
+        "n_compounds": 6
+      },
+      {
+        "assay_id": 787473,
+        "n_compounds": 6
+      },
+      {
+        "assay_id": 1331730,
+        "n_compounds": 6
+      },
+      {
+        "assay_id": 25808,
+        "n_compounds": 5
+      },
+      {
+        "assay_id": 604261,
+        "n_compounds": 4
+      },
+      {
+        "assay_id": 748677,
+        "n_compounds": 4
+      },
+      {
+        "assay_id": 748678,
+        "n_compounds": 4
+      },
+      {
+        "assay_id": 795234,
+        "n_compounds": 4
+      },
+      {
+        "assay_id": 876788,
+        "n_compounds": 4
+      },
+      {
+        "assay_id": 2048124,
+        "n_compounds": 4
+      },
+      {
+        "assay_id": 347903,
+        "n_compounds": 3
+      },
+      {
+        "assay_id": 439096,
+        "n_compounds": 3
+      },
+      {
+        "assay_id": 464072,
+        "n_compounds": 3
+      },
+      {
+        "assay_id": 830897,
+        "n_compounds": 3
+      },
+      {
+        "assay_id": 908764,
+        "n_compounds": 3
+      },
+      {
+        "assay_id": 1931138,
+        "n_compounds": 3
+      },
+      {
+        "assay_id": 409699,
+        "n_compounds": 2
+      },
+      {
+        "assay_id": 510014,
+        "n_compounds": 2
+      },
+      {
+        "assay_id": 510015,
+        "n_compounds": 2
+      }
+    ]
+  },
+  "no_fitting_confirmed": true
+}

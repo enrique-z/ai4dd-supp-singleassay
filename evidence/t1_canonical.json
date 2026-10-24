@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "script": "split_canon/run_all.py",
+    "date": "2026-09-05",
+    "benchmark_file": "data/lipophilicity_astrazeneca.tab",
+    "db_file": "data/chembl_36/chembl_36_sqlite/chembl_36.db",
+    "n_rows": 4200,
+    "parse_errors": 0,
+    "n_scaffolds": 2408,
+    "parse_rate": 1.0
+  },
+  "task1_tdc_install": {
+    "outcome": "PyTDC cannot be installed into the current system Python (Python 3.14, externally managed; an unrelated broken editable install causes ModuleNotFoundError in pip's build subprocess). PyTDC 1.1.15 is already installed in a separate Python 3.11 virtual environment. The split source code was read verbatim from that installation.",
+    "pytdc_version": "1.1.15",
+    "split_source_file": "<venv>/lib/python3.11/site-packages/tdc/utils/split.py",
+    "algorithm_verbatim": {
+      "scaffold_call": "MurckoScaffold.MurckoScaffoldSmiles(mol=Chem.MolFromSmiles(smiles), includeChirality=False)",
+      "includeChirality": false,
+      "note_mol_vs_smiles_arg": "TDC passes mol= (a Mol object), not smiles=; passing smiles= directly to MurckoScaffoldSmiles also works but TDC goes mol= route.",
+      "big_group_threshold": "len(idx_set) > val_size/2 OR len(idx_set) > test_size/2 (with default frac=[0.7,0.1,0.2] and N=4200: threshold > 210)",
+      "n_big_scaffolds_for_this_dataset": 0,
+      "n_small_scaffolds": 2408,
+      "ordering": "1. Partition into big/small. 2. random.shuffle(big, seed). 3. random.shuffle(small, seed). 4. Concatenate big + small. Tie-breaking is therefore by shuffle \u2014 NOT by scaffold SMILES or group size alone.",
+      "shuffle_rng": "Python random.Random(seed) constructed, then random.seed(seed) called again before the first shuffle \u2014 as written in TDC source.",
+      "greedy_fill": "For each group in order: if len(train)+size<=train_size => train; elif len(val)+size<=val_size => val; else test.",
+      "default_seed": 42,
+      "default_frac": [
+        0.7,
+        0.1,
+        0.2
+      ],
+      "entity_column": "Drug",
+      "tdc_class_method": "single_pred_dataset.SinglePredDataset.get_split(method='scaffold')"
+    }
+  },
+  "task2_canonical_split": {
+    "is_tdc_exact_replica": true,
+    "description": "TDC create_scaffold_split replicated exactly: same scaffold function, same big/small partition, same Random(42) shuffle, same greedy fill. Since Task 1 obtained TDC's algorithm, this IS the official TDC split.",
+    "specification": {
+      "scaffold": "MurckoScaffold.MurckoScaffoldSmiles(mol=MolFromSmiles(s), includeChirality=False)",
+      "seed": 42,
+      "frac": [
+        0.7,
+        0.1,
+        0.2
+      ],
+      "big_threshold_description": "group_size > 210 (= min(val_size, test_size)/2)",
+      "ordering_description": "random.shuffle(big, seed=42) ++ random.shuffle(small, seed=42)",
+      "fill": "greedy: train first (cap 2940), then val (cap 420), remainder to test"
+    },
+    "fold_sizes": {
+      "train": 2940,
+      "val": 420,
+      "test": 840
+    },
+    "train_median_y": 2.31,
+    "n_big_scaffolds": 0,
+    "n_small_scaffolds": 2408
+  },
+  "task3_arm_results": {
+    "split_used": "TDC canonical (shuffle seed=42)",
+    "fold_sizes": {
+      "train": 2940,
+      "val": 420,
+      "test": 840
+    },
+    "train_median_y": 2.31,
+    "arm_a_including_1369278": {
+      "covered_n": 834,
+      "covered_pct": 99.29,
+      "covered_subset_metrics": {
+        "mae": 0.017209,
+        "rmse": 0.097424,
+        "pearson_r": 0.996624,
+        "n": 834
+      },
+      "full_fold_metrics": {
+        "mae": 0.02399,
+        "rmse": 0.146941,
+        "pearson_r": 0.99231,
+        "n": 840
+      },
+      "n_exact_predictions": 689
+    },
+    "arm_b_excluding_1369278": {
+      "covered_n": 226,
+      "covered_pct": 26.9,
+      "covered_subset_metrics": {
+        "mae": 0.124186,
+        "rmse": 0.369186,
+        "pearson_r": 0.946587,
+        "n": 226
+      },
+      "full_fold_metrics": {
+        "mae": 0.763971,
+        "rmse": 1.046999,
+        "pearson_r": 0.475165,
+        "n": 840
+      },
+      "n_distinct_assays_b": 377
+    }
+  },
+  "task4_sensitivity": {
+    "conventions_tested": [
+      "TDC_shuffle_seed42",
+      "det_asc_smiles",
+      "det_desc_smiles",
+      "det_first_drug_id"
+    ],
+    "results": [
+      {
+        "label": "TDC_shuffle_seed42",
+        "fold_sizes": {
+          "train": 2940,
+          "val": 420,
+          "test": 840
+        },
+        "train_median_y": 2.31,
+        "arm_a_full_fold_mae": 0.02399,
+        "arm_b_coverage_pct": 26.9,
+        "note": "official TDC canonical"
+      },
+      {
+        "label": "det_asc_smiles",
+        "fold_sizes": {
+          "train": 2940,
+          "val": 420,
+          "test": 840
+        },
+        "train_median_y": 2.37,
+        "arm_a_full_fold_mae": 0.035494,
+        "arm_b_coverage_pct": 23.81,
+        "note": "spec Task 2 tie-break"
+      },
+      {
+        "label": "det_desc_smiles",
+        "fold_sizes": {
+          "train": 2940,
+          "val": 420,
+          "test": 840
+        },
+        "train_median_y": 2.36,
+        "arm_a_full_fold_mae": 0.029008,
+        "arm_b_coverage_pct": 20.71,
+        "note": ""
+      },
+      {
+        "label": "det_first_drug_id",
+        "fold_sizes": {
+          "train": 2940,
+          "val": 420,
+          "test": 840
+        },
+        "train_median_y": 2.34,
+        "arm_a_full_fold_mae": 0.048774,
+        "arm_b_coverage_pct": 25.48,
+        "note": ""
+      }
+    ],
+    "arm_a_mae_min": 0.02399,
+    "arm_a_mae_max": 0.048774,
+    "arm_a_mae_range": 0.024784,
+    "arm_a_mae_relative_variation_pct": 103.3,
+    "arm_b_cov_min_pct": 20.71,
+    "arm_b_cov_max_pct": 26.9,
+    "arm_b_cov_range_pp": 6.19,
+    "verdict": "ARM-A full-fold MAE ranges 0.0240\u20130.0488 (delta 0.0248, relative 103% of min). ARM-B coverage ranges 20.7\u201326.9pp (delta 6.2pp). Absolute MAE values are uniformly very low (<0.05), confirming high predictive quality under every convention. However the 2x relative variation in MAE and 6pp in coverage means the precise headline number DOES depend on tie-breaking choice. The paper should anchor to the TDC canonical (shuffle seed=42) and can defensibly claim that performance is strong under all conventions tested, but should NOT quote a single number without specifying the split convention.",
+    "recommendation": "Anchor all reported numbers to the TDC canonical split (seed=42). State results as 'under the TDC scaffold split with seed=42'. A robustness footnote can note that ARM-A full-fold MAE remains <0.05 under all four tie-break conventions tested, while acknowledging the precise value varies with split choice."
+  },
+  "gap_closure_2026_09_05": {
+    "task1_mechanism_check": {
+      "split": "TDC canonical seed=42",
+      "n_arm_a_covered": 834,
+      "a_covered_with_any_value_from_1369278": 834,
+      "b_exact_assay_1369278_only_median": 834,
+      "c_exact_pooled_all_assays_median": 689,
+      "interpretation": "Of 834 ARM-A covered test molecules, 834 have at least one activity in assay 1369278. Of those 834, the median of the assay-1369278-ONLY values equals the benchmark Y exactly (|err|<1e-9) for 834 \u2014 demonstrating label retrieval. By contrast, the pooled-median exact count (across all assays including external ones) is 689, lower because co-measured compounds get a diluted median."
+    },
+    "task2_arm_b_assay_count": {
+      "n_covered_test_molecules": 226,
+      "counting_definition": "i \u2014 distinct assay_ids with at least one value for at least one COVERED test molecule (IK in ARM-B covered set)",
+      "n_distinct_assays_def_i": 122,
+      "note_on_377": "The 377 figure in the original run was fetched by querying all 4200 molecule InChIKeys (not just the 840 test molecules), because the sensitivity script fetched logd_all_b for the full dataset. The 377 is therefore the count across all 4200 molecules. The correct number for the paper \u2014 definition (i), distinct assays serving the 226 COVERED TEST molecules \u2014 is 122."
+    }
+  }
+}

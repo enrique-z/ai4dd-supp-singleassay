@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "arm": "C",
+    "description": "kNN label averaging within the benchmark training fold. No external database, no model fitted, no parameter tuned on test data. k=5 chosen a priori for comparability with Graber et al. (Nat. Mach. Intell. 7:1713-1725, 2025). All four k values reported.",
+    "script": "arm_c/run_arm_c.py",
+    "date": "2026-09-05",
+    "benchmark_file": "data/lipophilicity_astrazeneca.tab",
+    "n_rows": 4200,
+    "parse_errors": 0,
+    "parse_rate": 1.0,
+    "fingerprint": "ECFP4 \u2014 GetMorganFingerprintAsBitVect(mol, radius=2, nBits=2048)",
+    "similarity": "Tanimoto (DataStructs.BulkTanimotoSimilarity)",
+    "split": "TDC canonical scaffold split, seed=42, frac=[0.7,0.1,0.2]",
+    "fold_sizes": {
+      "train": 2940,
+      "val": 420,
+      "test": 840
+    },
+    "n_train_fps_used": 2940,
+    "no_model_fitted": true,
+    "no_parameter_tuned_on_test": true,
+    "k_headline": 5,
+    "k_headline_rationale": "k=5 matches Graber et al. (2025), chosen before running. All k values reported; none selected by test performance."
+  },
+  "arm_c_results_all_k": {
+    "1": {
+      "mae": 0.886893,
+      "rmse": 1.169485,
+      "pearson_r": 0.475226,
+      "n": 840
+    },
+    "3": {
+      "mae": 0.804083,
+      "rmse": 1.061151,
+      "pearson_r": 0.519203,
+      "n": 840
+    },
+    "5": {
+      "mae": 0.786814,
+      "rmse": 1.043063,
+      "pearson_r": 0.526841,
+      "n": 840
+    },
+    "10": {
+      "mae": 0.822018,
+      "rmse": 1.058235,
+      "pearson_r": 0.488559,
+      "n": 840
+    }
+  },
+  "similarity_distribution_k5": {
+    "description": "Top-1 Tanimoto similarity between each test compound and its nearest training compound",
+    "n": 840,
+    "min": 0.151515,
+    "q1": 0.411283,
+    "median": 0.589515,
+    "q3": 0.697069,
+    "max": 1.0,
+    "n_ge_0p9": 17,
+    "n_ge_0p7": 206,
+    "n_ge_0p5": 532,
+    "pct_ge_0p9": 2.02,
+    "pct_ge_0p7": 24.52,
+    "pct_ge_0p5": 63.33
+  },
+  "context_for_comparison": {
+    "note": "Published model MAEs from the leaderboard for this benchmark",
+    "published_model_maes": [
+      0.42,
+      0.459,
+      0.538
+    ],
+    "arm_a_full_fold_mae": 0.024,
+    "arm_b_full_fold_mae": 0.764,
+    "arm_c_k5_mae": 0.786814
+  }
+}

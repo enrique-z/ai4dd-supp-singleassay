@@ -1,0 +1,24 @@
+FILE                                                                      BYTES  SHA256
+--------------------------------------------------------------------------------------------------------------
+A2_PREDECLARATION_2026-09-04.md                                           10871  7ab1fcdff1ca1ac69890494c4df3d86633e8bae6889c3cfa2b34b12f17d6e4c8
+analysis/bootstrap_ci.py                                                  21192  b12abeae1a6876802ac0dc759836e65fe30f03a5603423e944421843a4dcabb7
+analysis/guard.py                                                         21730  740fcdfd24a11b49904de87322ed7bdf6f7e0330302eb1bd60dca8a3d15c34d3
+analysis/make_figure.py                                                   26203  3485d408eab86f4e610b1e91750a443992ded49993e038d2c733038f3fdf789e
+analysis/README.md                                                         2784  edef2aa51068f481dd064c653f934a549ea5ab9eaa7dd471d2f2c4cda105d060
+evidence/figure_claims.json                                                 280  ea9126ce7ee20fa536908e5498aab1dade9a04975ae2b754e7f523a57bc95cb9
+evidence/interassay_floor_2026_09_05.json                                  4822  4c35da912ba58554168967139163924f71f961496aee1079d7f29f04264c37f7
+evidence/README.md                                                         2481  0356316d48c43a69059a447698b1b9173e473ca54fe5d7f59a4d2b835192930b
+evidence/recheck_2026_09_05.json                                          64343  203303b44569532b44fddbd740b64cdf568806037b2dee76de66544e04038534
+evidence/recompute_2026_09_05.json                                         6212  aea866877fbf599e7c8151e1dd87ce8241faa5bbf69d6f002dc0bd197f5217d6
+evidence/single_assay_benchmark_ledger.jsonl                              22382  473522f2fcf70152918fa1d66ea949560d24f27dd07da4499937b625f11e9ca9
+evidence/single_assay_benchmark_stamp_manifest.json                       20666  ffb6640420a881261bb8c0cbd4927bef4e905a98f1dbea0874230c04244eed10
+evidence/t1_arm_c_knn.json                                                 2228  d8091900aabcbe78e6f929631b09c2584c8c0083bb604a5a349517caca2cfd2c
+evidence/t1_bootstrap_cis.json                                             1087  adce04d47e263d7b85f5c40ac9c71746721b72c845ad6e13a4637d809a28e839
+evidence/t1_canonical.json                                                 7999  7a41a32e9c5b54eb18a850154183cf7bda04780ee0f0d8ef0abcd6eacdf15ffa
+evidence/t1_lookup_baseline.json                                           4390  e89f2d3b3b925faa1814962beccecf02069da31475689e8ca9ef15ffe7c88f4d
+evidence/t1_verification.json                                              2920  a901d012a4b23e39da36ebd4d6115ee69eecc9d29156347193fb70533a5cf615
+evidence/t2_truncation_provenance.json                                     8627  9aad51716da6d3d04e25aa04692d045b258569d9eb5befe8613f775b1e20d8f0
+evidence/testfold_identity_and_misses.json                                53759  ab94e7f181141caf24f13aed041899871449dad7fbd5ceb65eadc2463a94afe7
+evidence/testfold_identity_and_misses.py                                   8552  c708e5cff6731966cb7154551975b947bebb07a34885865fb3e75b22d4019f99
+refs.bib                                                                  20545  54db9b5e033ca2ae460cfa258a536682cbb9fefefa46aebee34ec5c88ca29b83
+SUPPLEMENTARY_NOTE.md                                                      3031  13128fab68fd1a9ba6a088a7a506c845f883d6a2adb930eb2fb9fa6c5aab8295

@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "computed_on": "2026-09-05",
+    "db": "data/chembl_36/chembl_36_sqlite/chembl_36.db",
+    "benchmark": "data/lipophilicity_astrazeneca.tab",
+    "split": "TDC scaffold seed=42 frac=[0.7,0.1,0.2]",
+    "train_n": 2940,
+    "valid_n": 420,
+    "test_n": 840,
+    "train_median_y": 2.31,
+    "assay_id_source": 1369278,
+    "fallback_value": 2.31
+  },
+  "q1_arm_a": {
+    "a_source": {
+      "covered_n": 834,
+      "covered_pct": 99.2857,
+      "uncovered_n": 6,
+      "covered_mae": 0.0,
+      "covered_rmse": 0.0,
+      "covered_pearson_r": 1.0,
+      "full_mae": 0.006905,
+      "full_rmse": 0.110309,
+      "full_pearson_r": 0.995672,
+      "exact_count": 834,
+      "flags": "none",
+      "expectation": "covered=834, covered_mae=0.0000, exact=834, full_mae\u22480.0069"
+    },
+    "a_pooled": {
+      "covered_n": 834,
+      "covered_pct": 99.2857,
+      "uncovered_n": 6,
+      "covered_mae": 0.017209,
+      "covered_rmse": 0.097424,
+      "covered_pearson_r": 0.996624,
+      "full_mae": 0.02399,
+      "full_rmse": 0.146941,
+      "full_pearson_r": 0.99231,
+      "exact_count": 689,
+      "flags": "none",
+      "expectation": "covered_mae\u22480.0172, full_mae\u22480.0240, exact=689"
+    }
+  },
+  "q2_constant_predictor": {
+    "predicted_value": 2.31,
+    "n": 840,
+    "mae": 0.965429,
+    "rmse": 1.187459,
+    "pearson_r": 0.0,
+    "pearson_r_note": "Effectively undefined (constant predictor has zero variance in predictions); floating-point sum gives r~=0 rather than exact 0 or NaN."
+  },
+  "q3_arm_b_decomposition": {
+    "covered_n": 226,
+    "uncovered_n": 614,
+    "covered_mae": 0.124186,
+    "covered_rmse": 0.369186,
+    "covered_pearson_r": 0.946587,
+    "full_mae": 0.763971,
+    "full_rmse": 1.046999,
+    "full_pearson_r": 0.475165,
+    "total_absolute_error": 641.736,
+    "covered_absolute_error": 28.066,
+    "uncovered_absolute_error": 613.67,
+    "covered_pct_of_total_error": 4.3734,
+    "uncovered_pct_of_total_error": 95.6266
+  },
+  "q4_arm_b_logd74_only": {
+    "covered_n": 2,
+    "covered_pct": 0.2381,
+    "uncovered_n": 838,
+    "covered_mae": 0.345,
+    "covered_rmse": 0.374233,
+    "covered_pearson_r": null,
+    "full_mae": 0.965429,
+    "full_rmse": 1.18742,
+    "full_pearson_r": 0.008565,
+    "exact_count": 0
+  },
+  "q5_runner_up_assay_counts": {
+    "all_4200_top3": [
+      {
+        "assay_id": 25810,
+        "n_compounds": 80
+      },
+      {
+        "assay_id": 16545,
+        "n_compounds": 49
+      },
+      {
+        "assay_id": 23427,
+        "n_compounds": 48
+      }
+    ],
+    "test_840_top3": [
+      {
+        "assay_id": 860172,
+        "n_compounds": 19
+      },
+      {
+        "assay_id": 839819,
+        "n_compounds": 15
+      },
+      {
+        "assay_id": 735526,
+        "n_compounds": 10
+      }
+    ]
+  },
+  "q6_inchikey_agreement": {
+    "denominator": 4195,
+    "full_key_agree": 4194,
+    "full_key_disagree_n": 1,
+    "full_key_disagree_list": [
+      {
+        "drug_id": "CHEMBL421",
+        "computed_inchikey": "NCEXYHBECQHGNR-UHFFFAOYSA-N",
+        "chembl_inchikey": "NCEXYHBECQHGNR-QZQOTICOSA-N"
+      }
+    ],
+    "connectivity_layer_agree": 4195,
+    "connectivity_layer_disagree_n": 0,
+    "connectivity_layer_disagree_list": []
+  },
+  "q7_boundary_bins": {
+    "note": "Bin counts are over the TEST FOLD (840 compounds) unless stated. Distinct value counts are over ALL 4200 benchmark compounds.",
+    "test_fold_bin_counts": {
+      "at_lower_bound": {
+        "interval": "[-1.50,-1.45)",
+        "n": 0
+      },
+      "just_inside_lower": {
+        "interval": "[-1.45,-1.40)",
+        "n": 2
+      },
+      "just_inside_upper": {
+        "interval": "[4.45,4.50)",
+        "n": 1
+      },
+      "at_upper_bound_would_be": {
+        "note": "4.50 is a bin edge; values at exactly 4.50 go into [4.50,4.55)",
+        "interval": "[4.50,4.55)",
+        "n": 2
+      }
+    },
+    "all_4200_distinct_value_counts": {
+      "upper_tail": {
+        "4.50": 4,
+        "4.49": 3,
+        "4.48": 3
+      },
+      "lower_tail": {
+        "-1.50": 1,
+        "-1.49": 0,
+        "-1.48": 1
+      },
+      "mean_count_per_occupied_value_3p5_to_4p45": 5.9231,
+      "mean_count_per_occupied_value_lower_tail": 1.746
+    },
+    "all_4200_bin_counts": {
+      "at_lower_bound": {
+        "interval": "[-1.50,-1.45)",
+        "n": 2
+      },
+      "just_inside_lower": {
+        "interval": "[-1.45,-1.40)",
+        "n": 4
+      },
+      "two_inside_lower": {
+        "interval": "[-1.40,-1.35)",
+        "n": 2
+      },
+      "just_inside_upper": {
+        "interval": "[4.45,4.50)",
+        "n": 7
+      },
+      "two_inside_upper": {
+        "interval": "[4.40,4.45)",
+        "n": 8
+      },
+      "at_upper_bound_would_be": {
+        "interval": "[4.50,4.55)",
+        "n": 4
+      }
+    },
+    "paper_numbers_7_and_8": {
+      "note": "In the all-4200 distribution: 7 refers to bin [4.45,4.50) (just inside upper bound); 8 refers to bin [4.40,4.45) (two bins inside upper bound)",
+      "bin_7": {
+        "interval": "[4.45,4.50)",
+        "n": 7
+      },
+      "bin_8": {
+        "interval": "[4.40,4.45)",
+        "n": 8
+      }
+    }
+  },
+  "q8_assay_counts": {
+    "a_no_filter": {
+      "total_distinct_assays": 2889,
+      "logd_bare": 2862,
+      "logd74": 27
+    },
+    "b_value_not_null": {
+      "total_distinct_assays": 2867,
+      "logd_bare": 2841,
+      "logd74": 26
+    }
+  },
+  "q9_join_by_inchikey": {
+    "arm_a_pooled_by_inchikey": {
+      "covered_n": 834,
+      "covered_pct": 99.2857,
+      "full_mae": 0.02399,
+      "full_rmse": 0.146941,
+      "full_pearson_r": 0.99231
+    },
+    "arm_b_by_inchikey": {
+      "covered_n": 226,
+      "covered_pct": 26.9048,
+      "full_mae": 0.763971,
+      "full_rmse": 1.046999,
+      "full_pearson_r": 0.475165
+    },
+    "comparison_arm_a_pooled": {
+      "accession_covered_n": 834,
+      "inchikey_covered_n": 834,
+      "accession_full_mae": 0.02399,
+      "inchikey_full_mae": 0.02399,
+      "identical_results": true
+    },
+    "comparison_arm_b": {
+      "accession_covered_n": 226,
+      "inchikey_covered_n": 226,
+      "accession_full_mae": 0.763971,
+      "inchikey_full_mae": 0.763971,
+      "identical_results": true
+    }
+  }
+}

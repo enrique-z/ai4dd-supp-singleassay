@@ -1,0 +1,167 @@
+{
+  "part1_verdict": {
+    "conclusion": "SQL NULL, not text None",
+    "check_a_claim": "WRONG",
+    "checks_bc_claim": "CORRECT",
+    "evidence": {
+      "a_typeof_count": [
+        {
+          "typeof": "null",
+          "count": 4200
+        }
+      ],
+      "b_is_null_count": 4200,
+      "c_equals_none_count": 0,
+      "d_quote_distinct": [
+        "NULL"
+      ],
+      "e_logd_typeof": [
+        {
+          "typeof": "null",
+          "count": 5241
+        },
+        {
+          "typeof": "text",
+          "count": 29769
+        }
+      ],
+      "e2_global_typeof": [
+        {
+          "typeof": "null",
+          "count": 7405968
+        },
+        {
+          "typeof": "text",
+          "count": 16861344
+        }
+      ],
+      "none_as_text_in_entire_db": 0
+    }
+  },
+  "where_clause_used": "standard_type IN ('LogD','LogD7.4') AND standard_value IS NOT NULL",
+  "split": {
+    "method": "own_implementation_bemis_murcko_greedy",
+    "tdc_available": false,
+    "train_n": 2940,
+    "valid_n": 420,
+    "test_n": 840,
+    "train_median_y": 2.38
+  },
+  "arm_a": {
+    "coverage_n": 833,
+    "coverage_total": 840,
+    "coverage_pct": 99.1667,
+    "covered_mae": 0.0315,
+    "covered_rmse": 0.1573,
+    "covered_r": 0.9917,
+    "covered_n": 833,
+    "full_mae": 0.0387,
+    "full_rmse": 0.1922,
+    "full_r": 0.9875,
+    "full_n": 840,
+    "exact_count": 703,
+    "top5_errors": [
+      [
+        2.38,
+        "CHEMBL802",
+        -1.61,
+        0.77
+      ],
+      [
+        1.73,
+        "CHEMBL218490",
+        2.0,
+        0.27
+      ],
+      [
+        1.355,
+        "CHEMBL808",
+        3.895,
+        2.54
+      ],
+      [
+        1.195,
+        "CHEMBL51085",
+        2.115,
+        3.31
+      ],
+      [
+        1.035,
+        "CHEMBL1329237",
+        4.405,
+        3.37
+      ]
+    ],
+    "from_assay_1369278_covered": 833,
+    "from_assay_1369278_exact": 832
+  },
+  "arm_b": {
+    "coverage_n": 201,
+    "coverage_total": 840,
+    "coverage_pct": 23.9286,
+    "covered_mae": 0.2624,
+    "covered_rmse": 0.6103,
+    "covered_r": 0.8953,
+    "covered_n": 201,
+    "full_mae": 0.7855,
+    "full_rmse": 1.0915,
+    "full_r": 0.4542,
+    "full_n": 840,
+    "exact_count": 63,
+    "distinct_assays": 164,
+    "top5_assays_by_coverage": [
+      [
+        25810,
+        20
+      ],
+      [
+        821274,
+        20
+      ],
+      [
+        839819,
+        12
+      ],
+      [
+        16545,
+        11
+      ],
+      [
+        23427,
+        10
+      ]
+    ],
+    "top5_errors": [
+      [
+        4.76,
+        "CHEMBL802",
+        -3.99,
+        0.77
+      ],
+      [
+        2.71,
+        "CHEMBL808",
+        5.25,
+        2.54
+      ],
+      [
+        2.39,
+        "CHEMBL51085",
+        0.92,
+        3.31
+      ],
+      [
+        2.07,
+        "CHEMBL1329237",
+        5.44,
+        3.37
+      ],
+      [
+        1.96,
+        "CHEMBL723",
+        1.31,
+        3.27
+      ]
+    ]
+  }
+}

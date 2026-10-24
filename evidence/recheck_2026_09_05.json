@@ -1,0 +1,2354 @@
+{
+  "generated": "2026-09-05",
+  "verdicts": {
+    "check1_logd74": "SURVIVES (partially): 1/21 rows (4.76%) are out-of-window in the LogD7.4-only population. Below -1.5: 0. Above 4.5: 1. Bare LogD contributes an additional 51 OOW rows.",
+    "check3": "SURVIVES: union count is 1 (assay 1369278 only). Claim holds."
+  },
+  "check1": {
+    "description": "Out-of-window analysis split by standard_type",
+    "excluded_assay": 1369278,
+    "window": [
+      -1.5,
+      4.5
+    ],
+    "join_level": "chembl_id -> molregno (exact, not parent)",
+    "a_logd74_only": {
+      "total_rows": 21,
+      "out_of_window": 1,
+      "below_lo": 0,
+      "above_hi": 1,
+      "pct_oow": 4.76,
+      "units_distribution": {
+        "None": 1
+      },
+      "oow_rows": [
+        {
+          "chembl_id": "CHEMBL1329237",
+          "assay_id": 844772,
+          "standard_value": 5.44,
+          "standard_type": "LogD7.4",
+          "standard_units": null
+        }
+      ],
+      "oow_rows_annotated": [
+        {
+          "chembl_id": "CHEMBL1329237",
+          "assay_id": 844772,
+          "standard_value": 5.44,
+          "standard_type": "LogD7.4",
+          "standard_units": null,
+          "assay_description": "GSK_TB: GSK in-house hydrophobicity assay at pH7.4 (logD)"
+        }
+      ]
+    },
+    "b_logd_only": {
+      "total_rows": 1725,
+      "out_of_window": 51,
+      "below_lo": 30,
+      "above_hi": 21,
+      "pct_oow": 2.96,
+      "units_distribution": {
+        "None": 51
+      },
+      "oow_rows": [
+        {
+          "chembl_id": "CHEMBL802",
+          "assay_id": 604261,
+          "standard_value": -3.99,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL850",
+          "assay_id": 572013,
+          "standard_value": -3.4,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL31",
+          "assay_id": 572013,
+          "standard_value": -2.96,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL32",
+          "assay_id": 572013,
+          "standard_value": -2.9,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL211456",
+          "assay_id": 1356593,
+          "standard_value": -2.74,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL424",
+          "assay_id": 1356593,
+          "standard_value": -2.62,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL435",
+          "assay_id": 2294461,
+          "standard_value": -2.5,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL9",
+          "assay_id": 908764,
+          "standard_value": -2.42,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL424",
+          "assay_id": 1491420,
+          "standard_value": -2.34,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL637",
+          "assay_id": 25810,
+          "standard_value": -2.29,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL26",
+          "assay_id": 604261,
+          "standard_value": -2.15,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL11",
+          "assay_id": 2262705,
+          "standard_value": -2.15,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL424",
+          "assay_id": 16540,
+          "standard_value": -2.14,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL128",
+          "assay_id": 23427,
+          "standard_value": -2.07,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL26",
+          "assay_id": 25810,
+          "standard_value": -2.04,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL184",
+          "assay_id": 25808,
+          "standard_value": -2,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL490",
+          "assay_id": 25810,
+          "standard_value": -1.96,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL660",
+          "assay_id": 23427,
+          "standard_value": -1.86,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL1072",
+          "assay_id": 25810,
+          "standard_value": -1.84,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL640",
+          "assay_id": 25810,
+          "standard_value": -1.82,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL128",
+          "assay_id": 1299004,
+          "standard_value": -1.7,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL1000",
+          "assay_id": 23647,
+          "standard_value": -1.6,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL26",
+          "assay_id": 25808,
+          "standard_value": -1.6,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL1191",
+          "assay_id": 748677,
+          "standard_value": -1.6,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 20614,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 20618,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 21550,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 23899,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 24717,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL9967",
+          "assay_id": 25810,
+          "standard_value": -1.51,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL103667",
+          "assay_id": 440915,
+          "standard_value": 4.6,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL831",
+          "assay_id": 543353,
+          "standard_value": 4.6,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL644",
+          "assay_id": 23423,
+          "standard_value": 4.64,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL1064",
+          "assay_id": 25810,
+          "standard_value": 4.68,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL2097971",
+          "assay_id": 2292718,
+          "standard_value": 4.68,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL831",
+          "assay_id": 23423,
+          "standard_value": 4.69,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL2316381",
+          "assay_id": 937023,
+          "standard_value": 4.8,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL103667",
+          "assay_id": 440916,
+          "standard_value": 4.9,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL550904",
+          "assay_id": 576770,
+          "standard_value": 5,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL103667",
+          "assay_id": 440917,
+          "standard_value": 5.1,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL2316396",
+          "assay_id": 937023,
+          "standard_value": 5.1,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL1857945",
+          "assay_id": 773993,
+          "standard_value": 5.2,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL808",
+          "assay_id": 1931138,
+          "standard_value": 5.25,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL1957266",
+          "assay_id": 1754527,
+          "standard_value": 7.3,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL567",
+          "assay_id": 23519,
+          "standard_value": 7.8,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL422",
+          "assay_id": 23519,
+          "standard_value": 8.1,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL728",
+          "assay_id": 23519,
+          "standard_value": 8.1,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL71",
+          "assay_id": 23519,
+          "standard_value": 9.36,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL564",
+          "assay_id": 23519,
+          "standard_value": 9.42,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL445",
+          "assay_id": 23519,
+          "standard_value": 9.73,
+          "standard_type": "LogD",
+          "standard_units": null
+        },
+        {
+          "chembl_id": "CHEMBL72",
+          "assay_id": 23519,
+          "standard_value": 10.2,
+          "standard_type": "LogD",
+          "standard_units": null
+        }
+      ],
+      "oow_rows_annotated": [
+        {
+          "chembl_id": "CHEMBL802",
+          "assay_id": 604261,
+          "standard_value": -3.99,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL850",
+          "assay_id": 572013,
+          "standard_value": -3.4,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D at pH 7.0"
+        },
+        {
+          "chembl_id": "CHEMBL31",
+          "assay_id": 572013,
+          "standard_value": -2.96,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D at pH 7.0"
+        },
+        {
+          "chembl_id": "CHEMBL32",
+          "assay_id": 572013,
+          "standard_value": -2.9,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D at pH 7.0"
+        },
+        {
+          "chembl_id": "CHEMBL211456",
+          "assay_id": 1356593,
+          "standard_value": -2.74,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Octanol-aqueous phase distribution coefficient, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL424",
+          "assay_id": 1356593,
+          "standard_value": -2.62,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Octanol-aqueous phase distribution coefficient, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL435",
+          "assay_id": 2294461,
+          "standard_value": -2.5,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound in toluene/water system at pH 7 by shake-flask assay based HPLC analysis"
+        },
+        {
+          "chembl_id": "CHEMBL9",
+          "assay_id": 908764,
+          "standard_value": -2.42,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Apparent hydrophobicity, log D of the compound in Octanol-buffer"
+        },
+        {
+          "chembl_id": "CHEMBL424",
+          "assay_id": 1491420,
+          "standard_value": -2.34,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "1-Octanol-water distribution coefficient, log D of the compound at pH 7.4 by shake flask method"
+        },
+        {
+          "chembl_id": "CHEMBL637",
+          "assay_id": 25810,
+          "standard_value": -2.29,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL26",
+          "assay_id": 604261,
+          "standard_value": -2.15,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL11",
+          "assay_id": 2262705,
+          "standard_value": -2.15,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL424",
+          "assay_id": 16540,
+          "standard_value": -2.14,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL128",
+          "assay_id": 23427,
+          "standard_value": -2.07,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL26",
+          "assay_id": 25810,
+          "standard_value": -2.04,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL184",
+          "assay_id": 25808,
+          "standard_value": -2,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.8)"
+        },
+        {
+          "chembl_id": "CHEMBL490",
+          "assay_id": 25810,
+          "standard_value": -1.96,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL660",
+          "assay_id": 23427,
+          "standard_value": -1.86,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL1072",
+          "assay_id": 25810,
+          "standard_value": -1.84,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL640",
+          "assay_id": 25810,
+          "standard_value": -1.82,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL128",
+          "assay_id": 1299004,
+          "standard_value": -1.7,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound at pH 7.4"
+        },
+        {
+          "chembl_id": "CHEMBL1000",
+          "assay_id": 23647,
+          "standard_value": -1.6,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient between dodecane and water (logDdod7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL26",
+          "assay_id": 25808,
+          "standard_value": -1.6,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.8)"
+        },
+        {
+          "chembl_id": "CHEMBL1191",
+          "assay_id": 748677,
+          "standard_value": -1.6,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "1-Octanol-water distribution coefficient, log D of the compound at pH 7.4 by shake-flask method"
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 20614,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient was evaluated for the protonated form (acidic pH )"
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 20618,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD) (aqueous phase 0.1 N HCl)"
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 21550,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD) (0.1 N HCl/octanol)"
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 23899,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Compound was evaluated for the partition coefficients probably at the pH >> 7.2 at the aqueous phase 0.1 N HCl"
+        },
+        {
+          "chembl_id": "CHEMBL22",
+          "assay_id": 24717,
+          "standard_value": -1.55,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD) (aqueous phase 0.1 N HCl)"
+        },
+        {
+          "chembl_id": "CHEMBL9967",
+          "assay_id": 25810,
+          "standard_value": -1.51,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL103667",
+          "assay_id": 440915,
+          "standard_value": 4.6,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Distribution coefficient, log D at pH 6.0"
+        },
+        {
+          "chembl_id": "CHEMBL831",
+          "assay_id": 543353,
+          "standard_value": 4.6,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D at pH 7.4 by liquid chromatography"
+        },
+        {
+          "chembl_id": "CHEMBL644",
+          "assay_id": 23423,
+          "standard_value": 4.64,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "log P values determined at pH 7.4"
+        },
+        {
+          "chembl_id": "CHEMBL1064",
+          "assay_id": 25810,
+          "standard_value": 4.68,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD6.5)"
+        },
+        {
+          "chembl_id": "CHEMBL2097971",
+          "assay_id": 2292718,
+          "standard_value": 4.68,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Chromatographic hydrophobicity index, log D of the compound in phosphate buffer at pH 7.4 by UV-HPLC analysis"
+        },
+        {
+          "chembl_id": "CHEMBL831",
+          "assay_id": 23423,
+          "standard_value": 4.69,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "log P values determined at pH 7.4"
+        },
+        {
+          "chembl_id": "CHEMBL2316381",
+          "assay_id": 937023,
+          "standard_value": 4.8,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL103667",
+          "assay_id": 440916,
+          "standard_value": 4.9,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Distribution coefficient, log D at pH 6.5"
+        },
+        {
+          "chembl_id": "CHEMBL550904",
+          "assay_id": 576770,
+          "standard_value": 5,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Octanol-water distribution coefficient, log D at pH 7.4 by HPLC-MS analysis"
+        },
+        {
+          "chembl_id": "CHEMBL103667",
+          "assay_id": 440917,
+          "standard_value": 5.1,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Distribution coefficient, log D at pH 7.4"
+        },
+        {
+          "chembl_id": "CHEMBL2316396",
+          "assay_id": 937023,
+          "standard_value": 5.1,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of the compound"
+        },
+        {
+          "chembl_id": "CHEMBL1857945",
+          "assay_id": 773993,
+          "standard_value": 5.2,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "DNDI: Lipophilicity measured in Chromatographic hydrophobicity index (CHI) assay, pH 7.4"
+        },
+        {
+          "chembl_id": "CHEMBL808",
+          "assay_id": 1931138,
+          "standard_value": 5.25,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Lipophilicity, log D of compound at pH 7.4"
+        },
+        {
+          "chembl_id": "CHEMBL1957266",
+          "assay_id": 1754527,
+          "standard_value": 7.3,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Chromatographic hydrophobicity index, log D of the compound at pH 7.4 by HPLC method"
+        },
+        {
+          "chembl_id": "CHEMBL567",
+          "assay_id": 23519,
+          "standard_value": 7.8,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL422",
+          "assay_id": 23519,
+          "standard_value": 8.1,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL728",
+          "assay_id": 23519,
+          "standard_value": 8.1,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL71",
+          "assay_id": 23519,
+          "standard_value": 9.36,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL564",
+          "assay_id": 23519,
+          "standard_value": 9.42,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL445",
+          "assay_id": 23519,
+          "standard_value": 9.73,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        },
+        {
+          "chembl_id": "CHEMBL72",
+          "assay_id": 23519,
+          "standard_value": 10.2,
+          "standard_type": "LogD",
+          "standard_units": null,
+          "assay_description": "Partition coefficient (logD7.4)"
+        }
+      ]
+    },
+    "c_units_and_extremes": {
+      "logd74_units_distribution": {
+        "None": 1
+      },
+      "logd_units_distribution": {
+        "None": 51
+      },
+      "note": "See oow_rows in check1a and check1b for per-row units. Extreme values sourced as below.",
+      "extreme_values_source": {
+        "max_logd74": 5.44,
+        "min_logd74": 5.44,
+        "max_logd": 10.2,
+        "min_logd": -3.99
+      }
+    },
+    "d_assay_descriptions_for_oow_assays": {
+      "16540": "Partition coefficient (logD7.4)",
+      "20614": "Partition coefficient was evaluated for the protonated form (acidic pH )",
+      "20618": "Partition coefficient (logD) (aqueous phase 0.1 N HCl)",
+      "21550": "Partition coefficient (logD) (0.1 N HCl/octanol)",
+      "23423": "log P values determined at pH 7.4",
+      "23427": "Partition coefficient (logD6.5)",
+      "23519": "Partition coefficient (logD7.4)",
+      "23647": "Partition coefficient between dodecane and water (logDdod7.4)",
+      "23899": "Compound was evaluated for the partition coefficients probably at the pH >> 7.2 at the aqueous phase 0.1 N HCl",
+      "24717": "Partition coefficient (logD) (aqueous phase 0.1 N HCl)",
+      "25808": "Partition coefficient (logD6.8)",
+      "25810": "Partition coefficient (logD6.5)",
+      "440915": "Distribution coefficient, log D at pH 6.0",
+      "440916": "Distribution coefficient, log D at pH 6.5",
+      "440917": "Distribution coefficient, log D at pH 7.4",
+      "543353": "Lipophilicity, log D at pH 7.4 by liquid chromatography",
+      "572013": "Lipophilicity, log D at pH 7.0",
+      "576770": "Octanol-water distribution coefficient, log D at pH 7.4 by HPLC-MS analysis",
+      "604261": "Lipophilicity, log D of the compound",
+      "748677": "1-Octanol-water distribution coefficient, log D of the compound at pH 7.4 by shake-flask method",
+      "773993": "DNDI: Lipophilicity measured in Chromatographic hydrophobicity index (CHI) assay, pH 7.4",
+      "844772": "GSK_TB: GSK in-house hydrophobicity assay at pH7.4 (logD)",
+      "908764": "Apparent hydrophobicity, log D of the compound in Octanol-buffer",
+      "937023": "Lipophilicity, log D of the compound",
+      "1299004": "Lipophilicity, log D of the compound at pH 7.4",
+      "1356593": "Octanol-aqueous phase distribution coefficient, log D of the compound",
+      "1491420": "1-Octanol-water distribution coefficient, log D of the compound at pH 7.4 by shake flask method",
+      "1754527": "Chromatographic hydrophobicity index, log D of the compound at pH 7.4 by HPLC method",
+      "1931138": "Lipophilicity, log D of compound at pH 7.4",
+      "2262705": "Lipophilicity, log D of the compound",
+      "2292718": "Chromatographic hydrophobicity index, log D of the compound in phosphate buffer at pH 7.4 by UV-HPLC analysis",
+      "2294461": "Lipophilicity, log D of the compound in toluene/water system at pH 7 by shake-flask assay based HPLC analysis"
+    },
+    "inchikey_join_comparison": {
+      "a_logd74": {
+        "total_rows": 21,
+        "out_of_window": 1,
+        "below_lo": 0,
+        "above_hi": 1,
+        "pct_oow": 4.76,
+        "units_distribution": {
+          "None": 1
+        },
+        "oow_rows": [
+          {
+            "chembl_id": "CHEMBL1329237",
+            "assay_id": 844772,
+            "standard_value": 5.44,
+            "standard_type": "LogD7.4",
+            "standard_units": null
+          }
+        ],
+        "n_benchmark_with_inchikey": 4200,
+        "n_inchikey_matched_to_chembl": 4194
+      },
+      "b_logd": {
+        "total_rows": 1722,
+        "out_of_window": 51,
+        "below_lo": 30,
+        "above_hi": 21,
+        "pct_oow": 2.96,
+        "units_distribution": {
+          "None": 51
+        },
+        "oow_rows": [
+          {
+            "chembl_id": "CHEMBL802",
+            "assay_id": 604261,
+            "standard_value": -3.99,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL850",
+            "assay_id": 572013,
+            "standard_value": -3.4,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL31",
+            "assay_id": 572013,
+            "standard_value": -2.96,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL32",
+            "assay_id": 572013,
+            "standard_value": -2.9,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL211456",
+            "assay_id": 1356593,
+            "standard_value": -2.74,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL424",
+            "assay_id": 1356593,
+            "standard_value": -2.62,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL435",
+            "assay_id": 2294461,
+            "standard_value": -2.5,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL9",
+            "assay_id": 908764,
+            "standard_value": -2.42,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL424",
+            "assay_id": 1491420,
+            "standard_value": -2.34,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL637",
+            "assay_id": 25810,
+            "standard_value": -2.29,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL26",
+            "assay_id": 604261,
+            "standard_value": -2.15,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL11",
+            "assay_id": 2262705,
+            "standard_value": -2.15,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL424",
+            "assay_id": 16540,
+            "standard_value": -2.14,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL128",
+            "assay_id": 23427,
+            "standard_value": -2.07,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL26",
+            "assay_id": 25810,
+            "standard_value": -2.04,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL184",
+            "assay_id": 25808,
+            "standard_value": -2,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL490",
+            "assay_id": 25810,
+            "standard_value": -1.96,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL660",
+            "assay_id": 23427,
+            "standard_value": -1.86,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL1072",
+            "assay_id": 25810,
+            "standard_value": -1.84,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL640",
+            "assay_id": 25810,
+            "standard_value": -1.82,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL128",
+            "assay_id": 1299004,
+            "standard_value": -1.7,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL1000",
+            "assay_id": 23647,
+            "standard_value": -1.6,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL26",
+            "assay_id": 25808,
+            "standard_value": -1.6,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL1191",
+            "assay_id": 748677,
+            "standard_value": -1.6,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL22",
+            "assay_id": 20614,
+            "standard_value": -1.55,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL22",
+            "assay_id": 20618,
+            "standard_value": -1.55,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL22",
+            "assay_id": 21550,
+            "standard_value": -1.55,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL22",
+            "assay_id": 23899,
+            "standard_value": -1.55,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL22",
+            "assay_id": 24717,
+            "standard_value": -1.55,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL9967",
+            "assay_id": 25810,
+            "standard_value": -1.51,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL103667",
+            "assay_id": 440915,
+            "standard_value": 4.6,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL831",
+            "assay_id": 543353,
+            "standard_value": 4.6,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL644",
+            "assay_id": 23423,
+            "standard_value": 4.64,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL1064",
+            "assay_id": 25810,
+            "standard_value": 4.68,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL2097971",
+            "assay_id": 2292718,
+            "standard_value": 4.68,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL831",
+            "assay_id": 23423,
+            "standard_value": 4.69,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL2316381",
+            "assay_id": 937023,
+            "standard_value": 4.8,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL103667",
+            "assay_id": 440916,
+            "standard_value": 4.9,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL550904",
+            "assay_id": 576770,
+            "standard_value": 5,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL103667",
+            "assay_id": 440917,
+            "standard_value": 5.1,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL2316396",
+            "assay_id": 937023,
+            "standard_value": 5.1,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL1857945",
+            "assay_id": 773993,
+            "standard_value": 5.2,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL808",
+            "assay_id": 1931138,
+            "standard_value": 5.25,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL1957266",
+            "assay_id": 1754527,
+            "standard_value": 7.3,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL567",
+            "assay_id": 23519,
+            "standard_value": 7.8,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL422",
+            "assay_id": 23519,
+            "standard_value": 8.1,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL728",
+            "assay_id": 23519,
+            "standard_value": 8.1,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL71",
+            "assay_id": 23519,
+            "standard_value": 9.36,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL564",
+            "assay_id": 23519,
+            "standard_value": 9.42,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL445",
+            "assay_id": 23519,
+            "standard_value": 9.73,
+            "standard_type": "LogD",
+            "standard_units": null
+          },
+          {
+            "chembl_id": "CHEMBL72",
+            "assay_id": 23519,
+            "standard_value": 10.2,
+            "standard_type": "LogD",
+            "standard_units": null
+          }
+        ],
+        "n_benchmark_with_inchikey": 4200,
+        "n_inchikey_matched_to_chembl": 4194
+      }
+    }
+  },
+  "check2": {
+    "primary_join_used": "chembl_id (exact ID match)",
+    "n_benchmark_compounds": 4200,
+    "n_matched_by_chembl_id": 4195,
+    "n_unmatched": 5,
+    "n_unique_molregnos": 4195,
+    "n_unique_parent_molregnos": 4195,
+    "n_collapsed_by_parent": 0,
+    "note": "The Drug_ID column contains ChEMBL molecule accessions (e.g. CHEMBL596271). Join is by chembl_id -> molregno. This is an exact-structure join at the registered-compound level (not collapsed to parent). 4195 of 4200 benchmark IDs match a ChEMBL molecule_dictionary entry. Collapsing to parent level would reduce from 4195 to 4195 unique entries (0 would merge)."
+  },
+  "check3": {
+    "total_logd_assays_with_descriptions": 2889,
+    "per_pattern": {
+      "experimental range": {
+        "count": 1,
+        "assay_ids": [
+          1369278
+        ]
+      },
+      "assay range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "measurable between": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "limit of quantitation": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "lloq": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "valid from": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "linear range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "dynamic range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "working range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "range -": {
+        "count": 1,
+        "assay_ids": [
+          1369278
+        ]
+      },
+      "range of": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "upper limit": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "lower limit": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "detection limit": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "within range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "outside range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "concentration range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "solubility limit": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "measurement range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "quantification range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "uloq": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "upper limit of quantitation": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "lower limit of quantitation": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "assay window": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "reliable range": {
+        "count": 0,
+        "assay_ids": []
+      },
+      "reportable range": {
+        "count": 0,
+        "assay_ids": []
+      }
+    },
+    "union_count": 1,
+    "union_assay_ids": [
+      1369278
+    ],
+    "other_assays_verbatim": {}
+  },
+  "check4": {
+    "a_structure_distinctness": {
+      "n_rows": 4200,
+      "n_parse_failures": 0,
+      "parse_failure_ids": [],
+      "parse_rate_pct": 100.0,
+      "n_distinct_full_inchikey": 4200,
+      "n_distinct_connectivity_inchikey": 4102,
+      "n_duplicate_full_inchikey_groups": 0,
+      "n_duplicate_connectivity_groups": 82,
+      "duplicate_full_inchikey_details": {},
+      "duplicate_connectivity_details": {
+        "UICNBXVDHCBKCE": [
+          {
+            "drug_id": "CHEMBL234951",
+            "y": 3.37
+          },
+          {
+            "drug_id": "CHEMBL394527",
+            "y": 3.27
+          },
+          {
+            "drug_id": "CHEMBL396724",
+            "y": 3.27
+          },
+          {
+            "drug_id": "CHEMBL231835",
+            "y": 3.3
+          }
+        ],
+        "XCLSBAOOCPECMX": [
+          {
+            "drug_id": "CHEMBL2165055",
+            "y": 0.32
+          },
+          {
+            "drug_id": "CHEMBL2165059",
+            "y": 0.81
+          }
+        ],
+        "IFGKACWCWSTXBV": [
+          {
+            "drug_id": "CHEMBL2010845",
+            "y": 3.3
+          },
+          {
+            "drug_id": "CHEMBL2010844",
+            "y": 3.3
+          }
+        ],
+        "QIVBCDIJIAJPQS": [
+          {
+            "drug_id": "CHEMBL484901",
+            "y": -1.17
+          },
+          {
+            "drug_id": "CHEMBL292303",
+            "y": -0.92
+          },
+          {
+            "drug_id": "CHEMBL54976",
+            "y": -1.08
+          }
+        ],
+        "VBVRORJVJBTVBX": [
+          {
+            "drug_id": "CHEMBL190812",
+            "y": 2.91
+          },
+          {
+            "drug_id": "CHEMBL188369",
+            "y": 3.14
+          }
+        ],
+        "GSDSWSVVBLHKDQ": [
+          {
+            "drug_id": "CHEMBL4",
+            "y": -0.45
+          },
+          {
+            "drug_id": "CHEMBL33",
+            "y": -0.35
+          }
+        ],
+        "VWXCBIYKAIQGAT": [
+          {
+            "drug_id": "CHEMBL2178942",
+            "y": 1.3
+          },
+          {
+            "drug_id": "CHEMBL2178945",
+            "y": 1.2
+          }
+        ],
+        "RTHCYVBBDHJXIQ": [
+          {
+            "drug_id": "CHEMBL1169388",
+            "y": 1.89
+          },
+          {
+            "drug_id": "CHEMBL153036",
+            "y": 1.96
+          },
+          {
+            "drug_id": "CHEMBL41",
+            "y": 1.92
+          }
+        ],
+        "DPGSGMKMVPXXPU": [
+          {
+            "drug_id": "CHEMBL2164680",
+            "y": 3.5
+          },
+          {
+            "drug_id": "CHEMBL2164679",
+            "y": 3.1
+          }
+        ],
+        "YDRCHQQFHSPVMO": [
+          {
+            "drug_id": "CHEMBL2158836",
+            "y": 2.5
+          },
+          {
+            "drug_id": "CHEMBL2158835",
+            "y": 2.5
+          }
+        ],
+        "NFEQUCGNNCYRCD": [
+          {
+            "drug_id": "CHEMBL2321991",
+            "y": 0.61
+          },
+          {
+            "drug_id": "CHEMBL2321992",
+            "y": 0.62
+          }
+        ],
+        "JWHAUXFOSRPERK": [
+          {
+            "drug_id": "CHEMBL1788268",
+            "y": 1.56
+          },
+          {
+            "drug_id": "CHEMBL631",
+            "y": 1.72
+          },
+          {
+            "drug_id": "CHEMBL1322675",
+            "y": 1.69
+          }
+        ],
+        "LOUPRKONTZGTKE": [
+          {
+            "drug_id": "CHEMBL97",
+            "y": 2.16
+          },
+          {
+            "drug_id": "CHEMBL522505",
+            "y": 2.26
+          },
+          {
+            "drug_id": "CHEMBL1294",
+            "y": 2.21
+          }
+        ],
+        "CWTNGAPXMSGUOV": [
+          {
+            "drug_id": "CHEMBL2164745",
+            "y": 0.78
+          },
+          {
+            "drug_id": "CHEMBL2164744",
+            "y": 0.77
+          },
+          {
+            "drug_id": "CHEMBL2164748",
+            "y": 0.9
+          }
+        ],
+        "AAAQFGUYHFJNHI": [
+          {
+            "drug_id": "CHEMBL1232461",
+            "y": 2.46
+          },
+          {
+            "drug_id": "CHEMBL2153435",
+            "y": 2.42
+          }
+        ],
+        "BLJRIMJGRPQVNF": [
+          {
+            "drug_id": "CHEMBL173706",
+            "y": -0.35
+          },
+          {
+            "drug_id": "CHEMBL499",
+            "y": -0.22
+          }
+        ],
+        "JHJPBZPNRYMQKP": [
+          {
+            "drug_id": "CHEMBL2158819",
+            "y": 2.17
+          },
+          {
+            "drug_id": "CHEMBL2158821",
+            "y": 2.14
+          }
+        ],
+        "QLSUBNPMUSWHLS": [
+          {
+            "drug_id": "CHEMBL2321994",
+            "y": 0.06
+          },
+          {
+            "drug_id": "CHEMBL2321993",
+            "y": 0.12
+          }
+        ],
+        "IDMVTOZYZLLLTD": [
+          {
+            "drug_id": "CHEMBL2335893",
+            "y": 3.08
+          },
+          {
+            "drug_id": "CHEMBL2335892",
+            "y": 2.98
+          },
+          {
+            "drug_id": "CHEMBL2335894",
+            "y": 3.05
+          }
+        ],
+        "LMLPLWPZYOTASZ": [
+          {
+            "drug_id": "CHEMBL2086659",
+            "y": 3.5
+          },
+          {
+            "drug_id": "CHEMBL2086660",
+            "y": 3.6
+          }
+        ],
+        "QZOAOSNSNYIGEZ": [
+          {
+            "drug_id": "CHEMBL2178949",
+            "y": 1.2
+          },
+          {
+            "drug_id": "CHEMBL2178948",
+            "y": 1.3
+          }
+        ],
+        "KNHNFKZUNFPPQE": [
+          {
+            "drug_id": "CHEMBL448483",
+            "y": 3.1
+          },
+          {
+            "drug_id": "CHEMBL384684",
+            "y": 3.1
+          },
+          {
+            "drug_id": "CHEMBL218006",
+            "y": 3.1
+          }
+        ],
+        "FEOIBPWKGPFSTB": [
+          {
+            "drug_id": "CHEMBL1796296",
+            "y": 2.48
+          },
+          {
+            "drug_id": "CHEMBL1796297",
+            "y": 2.31
+          },
+          {
+            "drug_id": "CHEMBL1738748",
+            "y": 2.42
+          }
+        ],
+        "VDQATBOWGVKJCS": [
+          {
+            "drug_id": "CHEMBL2179272",
+            "y": 0.22
+          },
+          {
+            "drug_id": "CHEMBL2179271",
+            "y": 0.22
+          }
+        ],
+        "MYUWJGFKFGXFOP": [
+          {
+            "drug_id": "CHEMBL2153179",
+            "y": 2.49
+          },
+          {
+            "drug_id": "CHEMBL2153180",
+            "y": 2.48
+          }
+        ],
+        "MYHHDENZOVCZAX": [
+          {
+            "drug_id": "CHEMBL1916283",
+            "y": 1.2
+          },
+          {
+            "drug_id": "CHEMBL1916281",
+            "y": 1.21
+          },
+          {
+            "drug_id": "CHEMBL1916282",
+            "y": 1.44
+          }
+        ],
+        "AQHHHDLHHXJYJD": [
+          {
+            "drug_id": "CHEMBL452861",
+            "y": 0.99
+          },
+          {
+            "drug_id": "CHEMBL275742",
+            "y": 1.13
+          }
+        ],
+        "LBOJYSIDWZQNJS": [
+          {
+            "drug_id": "CHEMBL284237",
+            "y": 1.6
+          },
+          {
+            "drug_id": "CHEMBL442137",
+            "y": 1.7
+          }
+        ],
+        "DBMFNEZMJWKKPU": [
+          {
+            "drug_id": "CHEMBL499520",
+            "y": 3.19
+          },
+          {
+            "drug_id": "CHEMBL1164184",
+            "y": 3.3
+          }
+        ],
+        "NBLFFMILGMAYPO": [
+          {
+            "drug_id": "CHEMBL1223873",
+            "y": 1.61
+          },
+          {
+            "drug_id": "CHEMBL1223951",
+            "y": 1.76
+          }
+        ],
+        "RCOBKSKAZMVBHT": [
+          {
+            "drug_id": "CHEMBL1172928",
+            "y": 1.69
+          },
+          {
+            "drug_id": "CHEMBL1172929",
+            "y": 1.69
+          }
+        ],
+        "TWYJYZNEFGIPER": [
+          {
+            "drug_id": "CHEMBL2179269",
+            "y": -0.3
+          },
+          {
+            "drug_id": "CHEMBL2179270",
+            "y": -0.26
+          }
+        ],
+        "JSYFJFPXKDQANW": [
+          {
+            "drug_id": "CHEMBL2164746",
+            "y": 0.39
+          },
+          {
+            "drug_id": "CHEMBL2164747",
+            "y": 0.37
+          }
+        ],
+        "XMIYZMBRDBBHKC": [
+          {
+            "drug_id": "CHEMBL2165054",
+            "y": 0.63
+          },
+          {
+            "drug_id": "CHEMBL2165058",
+            "y": 1.05
+          }
+        ],
+        "CMWTZPSULFXXJA": [
+          {
+            "drug_id": "CHEMBL12952",
+            "y": 0.23
+          },
+          {
+            "drug_id": "CHEMBL154",
+            "y": 0.13
+          }
+        ],
+        "FSHWIHXFSFIOAL": [
+          {
+            "drug_id": "CHEMBL249927",
+            "y": 3.71
+          },
+          {
+            "drug_id": "CHEMBL403569",
+            "y": 3.62
+          }
+        ],
+        "DUMBOKZAFBZKLT": [
+          {
+            "drug_id": "CHEMBL2179275",
+            "y": 0.91
+          },
+          {
+            "drug_id": "CHEMBL2179276",
+            "y": 0.93
+          }
+        ],
+        "KFHYZKCRXNRKRC": [
+          {
+            "drug_id": "CHEMBL351231",
+            "y": 3.51
+          },
+          {
+            "drug_id": "CHEMBL180368",
+            "y": 3.25
+          }
+        ],
+        "YNNUSGIPVFPVBX": [
+          {
+            "drug_id": "CHEMBL1626",
+            "y": 3.48
+          },
+          {
+            "drug_id": "CHEMBL315157",
+            "y": 3.04
+          }
+        ],
+        "LEUSUHAAYXEGAO": [
+          {
+            "drug_id": "CHEMBL195329",
+            "y": 1.9
+          },
+          {
+            "drug_id": "CHEMBL1181881",
+            "y": 1.77
+          }
+        ],
+        "MTJFPNPDPMDLQJ": [
+          {
+            "drug_id": "CHEMBL2010846",
+            "y": 3.1
+          },
+          {
+            "drug_id": "CHEMBL2010847",
+            "y": 3.0
+          }
+        ],
+        "JLOXTZFYJNCPIS": [
+          {
+            "drug_id": "CHEMBL2218940",
+            "y": 3.4
+          },
+          {
+            "drug_id": "CHEMBL261237",
+            "y": 3.3
+          }
+        ],
+        "RWIZIVMQIZHTSD": [
+          {
+            "drug_id": "CHEMBL1770464",
+            "y": 2.03
+          },
+          {
+            "drug_id": "CHEMBL1770465",
+            "y": 3.58
+          }
+        ],
+        "OPFCNFCPNQBDKS": [
+          {
+            "drug_id": "CHEMBL2165061",
+            "y": 0.97
+          },
+          {
+            "drug_id": "CHEMBL2165057",
+            "y": 0.51
+          }
+        ],
+        "IJDQETGUEUJVTB": [
+          {
+            "drug_id": "CHEMBL205133",
+            "y": 1.94
+          },
+          {
+            "drug_id": "CHEMBL203567",
+            "y": 1.91
+          }
+        ],
+        "LIXBPKCPMMFCNP": [
+          {
+            "drug_id": "CHEMBL207687",
+            "y": 3.42
+          },
+          {
+            "drug_id": "CHEMBL208118",
+            "y": 3.44
+          }
+        ],
+        "KQDRVXQXKZXMHP": [
+          {
+            "drug_id": "CHEMBL191413",
+            "y": 0.51
+          },
+          {
+            "drug_id": "CHEMBL2172782",
+            "y": 0.78
+          },
+          {
+            "drug_id": "CHEMBL192943",
+            "y": 0.56
+          }
+        ],
+        "YNSKBMXZDCLQIV": [
+          {
+            "drug_id": "CHEMBL1796299",
+            "y": 1.77
+          },
+          {
+            "drug_id": "CHEMBL1796298",
+            "y": 1.78
+          }
+        ],
+        "ZNKQZQCGGXGVRU": [
+          {
+            "drug_id": "CHEMBL1223872",
+            "y": 0.22
+          },
+          {
+            "drug_id": "CHEMBL1223870",
+            "y": 0.12
+          }
+        ],
+        "RCUDMUZVZCVJCO": [
+          {
+            "drug_id": "CHEMBL2325742",
+            "y": 3.3
+          },
+          {
+            "drug_id": "CHEMBL2325997",
+            "y": 2.7
+          },
+          {
+            "drug_id": "CHEMBL2325743",
+            "y": 2.67
+          }
+        ],
+        "IAKHMKGGTNLKSZ": [
+          {
+            "drug_id": "CHEMBL87",
+            "y": 1.12
+          },
+          {
+            "drug_id": "CHEMBL107",
+            "y": 0.82
+          }
+        ],
+        "RLHOWHVHHMGIKE": [
+          {
+            "drug_id": "CHEMBL1223815",
+            "y": 2.39
+          },
+          {
+            "drug_id": "CHEMBL1257578",
+            "y": 2.44
+          }
+        ],
+        "HLKJXRGYFOSRLT": [
+          {
+            "drug_id": "CHEMBL2177611",
+            "y": 1.39
+          },
+          {
+            "drug_id": "CHEMBL2177612",
+            "y": 1.03
+          }
+        ],
+        "NEQSWPCDHDQINX": [
+          {
+            "drug_id": "CHEMBL1094168",
+            "y": 3.88
+          },
+          {
+            "drug_id": "CHEMBL1096435",
+            "y": 3.86
+          }
+        ],
+        "XXPANQJNYNUNES": [
+          {
+            "drug_id": "CHEMBL273575",
+            "y": 2.08
+          },
+          {
+            "drug_id": "CHEMBL400964",
+            "y": 2.11
+          },
+          {
+            "drug_id": "CHEMBL51697",
+            "y": 2.11
+          }
+        ],
+        "LCBAQTCTQXHTJG": [
+          {
+            "drug_id": "CHEMBL451570",
+            "y": 0.51
+          },
+          {
+            "drug_id": "CHEMBL524266",
+            "y": 0.51
+          }
+        ],
+        "SXYGLXXKMZTVNB": [
+          {
+            "drug_id": "CHEMBL2179278",
+            "y": 1.12
+          },
+          {
+            "drug_id": "CHEMBL2179277",
+            "y": 1.09
+          }
+        ],
+        "DKYWVDODHFEZIM": [
+          {
+            "drug_id": "CHEMBL571",
+            "y": -0.12
+          },
+          {
+            "drug_id": "CHEMBL75435",
+            "y": -0.06
+          }
+        ],
+        "FSHWAYWSRSSJNF": [
+          {
+            "drug_id": "CHEMBL2335896",
+            "y": 3.18
+          },
+          {
+            "drug_id": "CHEMBL2335504",
+            "y": 3.17
+          },
+          {
+            "drug_id": "CHEMBL2335895",
+            "y": 3.1
+          }
+        ],
+        "SAERMKUGKADQHG": [
+          {
+            "drug_id": "CHEMBL208292",
+            "y": 3.58
+          },
+          {
+            "drug_id": "CHEMBL207584",
+            "y": 3.58
+          }
+        ],
+        "SKQZYGXREOYGMD": [
+          {
+            "drug_id": "CHEMBL1223952",
+            "y": 1.19
+          },
+          {
+            "drug_id": "CHEMBL1223953",
+            "y": 1.11
+          }
+        ],
+        "KAGHJGHSKOXHFD": [
+          {
+            "drug_id": "CHEMBL2178946",
+            "y": 1.7
+          },
+          {
+            "drug_id": "CHEMBL2178943",
+            "y": 1.8
+          }
+        ],
+        "PMLBVCPRUZMORG": [
+          {
+            "drug_id": "CHEMBL2321999",
+            "y": 1.95
+          },
+          {
+            "drug_id": "CHEMBL2321998",
+            "y": 1.86
+          }
+        ],
+        "COHWEVSELQDEED": [
+          {
+            "drug_id": "CHEMBL198150",
+            "y": 1.73
+          },
+          {
+            "drug_id": "CHEMBL211866",
+            "y": 1.38
+          }
+        ],
+        "SCGCBAAYLFTIJU": [
+          {
+            "drug_id": "CHEMBL2325696",
+            "y": 2.8
+          },
+          {
+            "drug_id": "CHEMBL2325697",
+            "y": 2.7
+          }
+        ],
+        "HJUAKZYKCANOOZ": [
+          {
+            "drug_id": "CHEMBL65511",
+            "y": 1.97
+          },
+          {
+            "drug_id": "CHEMBL277863",
+            "y": 2.05
+          }
+        ],
+        "NUUZIPNBPALDNV": [
+          {
+            "drug_id": "CHEMBL571526",
+            "y": 2.72
+          },
+          {
+            "drug_id": "CHEMBL570192",
+            "y": 2.86
+          }
+        ],
+        "VLPIATFUUWWMKC": [
+          {
+            "drug_id": "CHEMBL147507",
+            "y": 0.6
+          },
+          {
+            "drug_id": "CHEMBL558",
+            "y": 0.62
+          },
+          {
+            "drug_id": "CHEMBL146855",
+            "y": 0.6
+          }
+        ],
+        "PAHMIIXOZFIUNC": [
+          {
+            "drug_id": "CHEMBL2164741",
+            "y": 0.45
+          },
+          {
+            "drug_id": "CHEMBL2164740",
+            "y": 0.46
+          }
+        ],
+        "BACSZMCLZIDTIO": [
+          {
+            "drug_id": "CHEMBL460102",
+            "y": 2.16
+          },
+          {
+            "drug_id": "CHEMBL460103",
+            "y": 2.36
+          }
+        ],
+        "DWDDBDJWOXJEMQ": [
+          {
+            "drug_id": "CHEMBL2171277",
+            "y": 3.9
+          },
+          {
+            "drug_id": "CHEMBL2171278",
+            "y": 3.8
+          }
+        ],
+        "AEJOEPSMZCEYJN": [
+          {
+            "drug_id": "CHEMBL320882",
+            "y": 3.38
+          },
+          {
+            "drug_id": "CHEMBL38576",
+            "y": 3.42
+          }
+        ],
+        "BGRJTUBHPOOWDU": [
+          {
+            "drug_id": "CHEMBL267044",
+            "y": -0.84
+          },
+          {
+            "drug_id": "CHEMBL26",
+            "y": -1.2
+          }
+        ],
+        "FUYOZZGSCQXNCB": [
+          {
+            "drug_id": "CHEMBL1078411",
+            "y": 1.3
+          },
+          {
+            "drug_id": "CHEMBL1080786",
+            "y": 1.5
+          }
+        ],
+        "MLZKBOIYCFMLEI": [
+          {
+            "drug_id": "CHEMBL2036751",
+            "y": 1.94
+          },
+          {
+            "drug_id": "CHEMBL2036752",
+            "y": 1.86
+          }
+        ],
+        "FUCKCIVGBCBZNP": [
+          {
+            "drug_id": "CHEMBL1779512",
+            "y": 1.44
+          },
+          {
+            "drug_id": "CHEMBL1823817",
+            "y": 1.46
+          }
+        ],
+        "NPKHWEBWIFDKHH": [
+          {
+            "drug_id": "CHEMBL274737",
+            "y": 3.27
+          },
+          {
+            "drug_id": "CHEMBL383235",
+            "y": 2.99
+          }
+        ],
+        "WSEQXVZVJXJVFP": [
+          {
+            "drug_id": "CHEMBL549",
+            "y": 1.56
+          },
+          {
+            "drug_id": "CHEMBL1508",
+            "y": 1.48
+          }
+        ],
+        "JINQHBRSXWQJAZ": [
+          {
+            "drug_id": "CHEMBL447983",
+            "y": 1.7
+          },
+          {
+            "drug_id": "CHEMBL451286",
+            "y": 1.7
+          }
+        ],
+        "MTPVBMVUENFFLL": [
+          {
+            "drug_id": "CHEMBL223402",
+            "y": 4.0
+          },
+          {
+            "drug_id": "CHEMBL202626",
+            "y": 3.8
+          }
+        ],
+        "OTDSFZWENWUAKU": [
+          {
+            "drug_id": "CHEMBL2179273",
+            "y": 0.6
+          },
+          {
+            "drug_id": "CHEMBL2179274",
+            "y": 0.5
+          }
+        ],
+        "RKUNBYITZUJHSG": [
+          {
+            "drug_id": "CHEMBL517712",
+            "y": -0.66
+          },
+          {
+            "drug_id": "CHEMBL9751",
+            "y": -0.09
+          }
+        ]
+      }
+    },
+    "b_metadata": {
+      "benchmark_file": {
+        "header_verbatim": "Drug_ID\tDrug\tY",
+        "column_count": 3,
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "has_range_column": false,
+        "has_units_column": false,
+        "has_assay_column": false,
+        "has_provenance_column": false
+      },
+      "tdc_package": {
+        "tdc_base": "<venv>/lib/python3.11/site-packages/tdc",
+        "files_mentioning_lipophilicity": [
+          "<venv>/lib/python3.11/site-packages/tdc/metadata.py"
+        ],
+        "files_mentioning_astrazeneca": [
+          "<venv>/lib/python3.11/site-packages/tdc/metadata.py"
+        ],
+        "relevant_content_hits": {
+          "<venv>/lib/python3.11/site-packages/tdc/metadata.py": [
+            "L384: \"range_logAUC\",",
+            "L187: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_test-0\",",
+            "L188: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_test-1\",",
+            "L189: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_test-2\",",
+            "L190: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_test-3\",",
+            "L191: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_test-4\",",
+            "L192: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-0\",",
+            "L193: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-1\",",
+            "L194: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-2\",",
+            "L195: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-3\",",
+            "L196: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-4\",",
+            "L207: \"tchard_pep_cdr3b_only_neg_assays_test-0\",",
+            "L208: \"tchard_pep_cdr3b_only_neg_assays_test-1\",",
+            "L209: \"tchard_pep_cdr3b_only_neg_assays_test-2\",",
+            "L210: \"tchard_pep_cdr3b_only_neg_assays_test-3\",",
+            "L211: \"tchard_pep_cdr3b_only_neg_assays_test-4\",",
+            "L212: \"tchard_pep_cdr3b_only_neg_assays_train-0\",",
+            "L213: \"tchard_pep_cdr3b_only_neg_assays_train-1\",",
+            "L214: \"tchard_pep_cdr3b_only_neg_assays_train-2\",",
+            "L215: \"tchard_pep_cdr3b_only_neg_assays_train-3\",",
+            "L216: \"tchard_pep_cdr3b_only_neg_assays_train-4\",",
+            "L249: \"tchard_pep_cdr3b_only_neg_assays\": {",
+            "L250: 0: \"tchard_pep_cdr3b_only_neg_assays_train-0\",",
+            "L251: 1: \"tchard_pep_cdr3b_only_neg_assays_train-1\",",
+            "L252: 2: \"tchard_pep_cdr3b_only_neg_assays_train-2\",",
+            "L253: 3: \"tchard_pep_cdr3b_only_neg_assays_train-3\",",
+            "L254: 4: \"tchard_pep_cdr3b_only_neg_assays_train-4\",",
+            "L263: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train\": {",
+            "L264: 0: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-0\",",
+            "L265: 1: \"tchard_pep_cdr3b_cdr3a_mhc_only_neg_assays_train-1\","
+          ]
+        },
+        "data_files_found": [],
+        "data_file_contents": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "q1": {
+    "total_rows_assay": 4200,
+    "columns": [
+      {
+        "column": "standard_value",
+        "n_non_null": 4200,
+        "n_null": 0,
+        "min": "-1.5",
+        "max": "4.5",
+        "count_below_lo": 0,
+        "count_above_hi": 0,
+        "out_of_range_examples": []
+      },
+      {
+        "column": "value",
+        "n_non_null": 4200,
+        "n_null": 0,
+        "min": "-1.5",
+        "max": "4.5",
+        "count_below_lo": 0,
+        "count_above_hi": 0,
+        "out_of_range_examples": []
+      },
+      {
+        "column": "pchembl_value",
+        "n_non_null": 0,
+        "n_null": 4200,
+        "min": null,
+        "max": null,
+        "count_below_lo": 0,
+        "count_above_hi": 0,
+        "out_of_range_examples": []
+      }
+    ]
+  },
+  "q2": {
+    "standard_relation": [
+      {
+        "value": null,
+        "count": 4200
+      }
+    ],
+    "standard_type": [
+      {
+        "value": "LogD7.4",
+        "count": 4200
+      }
+    ],
+    "standard_units": [
+      {
+        "value": null,
+        "count": 4200
+      }
+    ],
+    "data_validity_comment": [
+      {
+        "value": null,
+        "count": 4200
+      }
+    ],
+    "activity_comment": [
+      {
+        "value": null,
+        "count": 4200
+      }
+    ],
+    "potential_duplicate": [
+      {
+        "value": 0,
+        "count": 4200
+      }
+    ]
+  },
+  "q3": {
+    "n_assay_distinct_mols": 4196,
+    "n_benchmark_ids": 4200,
+    "in_assay_not_benchmark_count": 13,
+    "in_assay_not_benchmark_range_summary": {
+      "inside": 14
+    },
+    "in_assay_not_benchmark": [
+      {
+        "chembl_id": "CHEMBL1057",
+        "standard_value": "0",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL1171829",
+        "standard_value": "3.49",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL1242",
+        "standard_value": "3.22",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL1292",
+        "standard_value": "3.17",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL1355736",
+        "standard_value": "-0.09",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL170",
+        "standard_value": "2.16",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL170",
+        "standard_value": "2.26",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL1729",
+        "standard_value": "3.56",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL1945778",
+        "standard_value": "2.3",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL3",
+        "standard_value": "0.5",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL4744444",
+        "standard_value": "-0.94",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL5315124",
+        "standard_value": "-0.35",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL5416410",
+        "standard_value": "3.41",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      },
+      {
+        "chembl_id": "CHEMBL5483011",
+        "standard_value": "2.9",
+        "standard_relation": null,
+        "data_validity_comment": null,
+        "range_classification": "inside"
+      }
+    ],
+    "in_benchmark_not_assay_count": 17,
+    "in_benchmark_not_assay": [
+      {
+        "drug_id": "CHEMBL115",
+        "y": "2.9",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL1169880",
+        "y": "3.49",
+        "in_chembl": false,
+        "logd_other_assays": null
+      },
+      {
+        "drug_id": "CHEMBL1369407",
+        "y": "3.17",
+        "in_chembl": false,
+        "logd_other_assays": null
+      },
+      {
+        "drug_id": "CHEMBL1421",
+        "y": "3.41",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL1625467",
+        "y": "3.22",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL177756",
+        "y": "0.0",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL190",
+        "y": "-0.09",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL2110569",
+        "y": "2.3",
+        "in_chembl": false,
+        "logd_other_assays": null
+      },
+      {
+        "drug_id": "CHEMBL315157",
+        "y": "3.04",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL33",
+        "y": "-0.35",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL387675",
+        "y": "-0.94",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL440464",
+        "y": "0.5",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL51697",
+        "y": "2.11",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL522505",
+        "y": "2.26",
+        "in_chembl": false,
+        "logd_other_assays": null
+      },
+      {
+        "drug_id": "CHEMBL560739",
+        "y": "3.56",
+        "in_chembl": true,
+        "logd_other_assays": []
+      },
+      {
+        "drug_id": "CHEMBL97",
+        "y": "2.16",
+        "in_chembl": false,
+        "logd_other_assays": null
+      },
+      {
+        "drug_id": "CHEMBL9751",
+        "y": "-0.09",
+        "in_chembl": true,
+        "logd_other_assays": []
+      }
+    ]
+  },
+  "q4": {
+    "n_other_logd_rows_total": 1757,
+    "n_out_of_range_in_other_assays": 52,
+    "examples": [
+      {
+        "chembl_id": "CHEMBL424",
+        "standard_value": "-2.14",
+        "assay_id": 16540,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL1000",
+        "standard_value": "-1.6",
+        "assay_id": 23647,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL22",
+        "standard_value": "-1.55",
+        "assay_id": 20614,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL22",
+        "standard_value": "-1.55",
+        "assay_id": 20618,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL22",
+        "standard_value": "-1.55",
+        "assay_id": 21550,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL184",
+        "standard_value": "-2",
+        "assay_id": 25808,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL26",
+        "standard_value": "-1.6",
+        "assay_id": 25808,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL831",
+        "standard_value": "4.69",
+        "assay_id": 23423,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL644",
+        "standard_value": "4.64",
+        "assay_id": 23423,
+        "standard_type": "LogD"
+      },
+      {
+        "chembl_id": "CHEMBL422",
+        "standard_value": "8.1",
+        "assay_id": 23519,
+        "standard_type": "LogD"
+      }
+    ]
+  },
+  "q5": {
+    "n_assays_with_range_in_description": 1,
+    "examples": [
+      {
+        "assay_id": 1369278,
+        "description": "ASTRAZENECA: Octan-1-ol/water (pH7.4) distribution coefficent measured  by a shake flask method described in J. Biomol. Screen. 2011, 16, 348-355. Experimental range -1.5 to 4.5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "script": "analysis/bootstrap_ci.py",
+  "seed_split": 42,
+  "seed_bootstrap": 42,
+  "B_replicates": 10000,
+  "inputs": {
+    "benchmark": "data/lipophilicity_astrazeneca.tab",
+    "chembl_db_uri": "file:data/chembl_36/chembl_36_sqlite/chembl_36.db?mode=ro"
+  },
+  "test_fold_n": 840,
+  "arm_b_covered_n": 226,
+  "integrity_gate": {
+    "arm_b_full_mae": {
+      "recomputed": 0.763971,
+      "ledger": 0.764,
+      "pass": true
+    },
+    "arm_b_covered_mae": {
+      "recomputed": 0.124186,
+      "ledger": 0.1242,
+      "pass": true
+    },
+    "arm_c_k5_mae": {
+      "recomputed": 0.786352,
+      "ledger": 0.7868,
+      "pass": true
+    }
+  },
+  "arm_b_full": {
+    "mae": 0.763971,
+    "ci_low": 0.716,
+    "ci_high": 0.8127,
+    "n": 840
+  },
+  "arm_b_covered": {
+    "mae": 0.124186,
+    "ci_low": 0.0837,
+    "ci_high": 0.1754,
+    "n": 226
+  },
+  "arm_c_k5": {
+    "mae": 0.786352,
+    "ci_low": 0.741,
+    "ci_high": 0.8339,
+    "n": 840
+  },
+  "paired_b_minus_c": {
+    "mean_diff": -0.022381,
+    "ci_low": -0.0756,
+    "ci_high": 0.0301,
+    "includes_zero": true
+  }
+}

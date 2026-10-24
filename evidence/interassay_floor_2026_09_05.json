@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "script": "compute_floor.py",
+    "date": "2026-09-05",
+    "db": "data/chembl_36/chembl_36_sqlite/chembl_36.db",
+    "benchmark": "data/lipophilicity_astrazeneca.tab",
+    "assay_bm": 1369278,
+    "n_bench_rows": 4200,
+    "rdkit_parse_rate": 1.0,
+    "fold_sizes": {
+      "train": 2940,
+      "val": 420,
+      "test": 840
+    },
+    "train_median_y": 2.31
+  },
+  "Q1a_median_aggregation": {
+    "description": "Per-compound median of external LogD values vs benchmark label",
+    "n_compounds": 226,
+    "mae": 0.1242,
+    "rmse": 0.3692,
+    "pearson_r": 0.9466,
+    "flag_vs_expected_0124": false
+  },
+  "Q1b_individual_records": {
+    "description": "Each individual external record vs that compound's benchmark label (no aggregation)",
+    "n_records": 289,
+    "mae": 0.2261,
+    "rmse": 0.682,
+    "median_abs_discrepancy": 0.03,
+    "quartiles_abs_discrepancy": {
+      "q25": 0.0,
+      "q50": 0.03,
+      "q75": 0.19
+    },
+    "note_on_q25_zero": "Q25=0.0000 is real: 82 of 289 individual external records (28.4%) match the benchmark label exactly, indicating data overlap \u2014 those external assays draw from the same source measurements as the AstraZeneca dataset. High RMSE (0.6820) vs low median (0.0300) reflects this bimodal distribution: tight cluster near 0 + long tail of genuine discordance."
+  },
+  "Q1c_fraction_above_048": {
+    "description": "Individual records with |discrepancy| > 0.48 log units",
+    "count": 39,
+    "total_records": 289,
+    "percentage": 13.49
+  },
+  "Q2_chembl_wide_logd": {
+    "description": "All LogD/LogD7.4 records in ChEMBL 36 excluding assay 1369278",
+    "total_records": 29756,
+    "above_4_5": {
+      "count": 2301,
+      "pct": 7.73
+    },
+    "below_neg1_5": {
+      "count": 629,
+      "pct": 2.11
+    },
+    "combined_outside": {
+      "count": 2930,
+      "pct": 9.85
+    },
+    "expected_counts": {
+      "total": 29762,
+      "above": 2301,
+      "below": 629,
+      "combined_pct": 9.8
+    },
+    "flags": {
+      "total_mismatch": false,
+      "above_mismatch": false,
+      "below_mismatch": false
+    }
+  },
+  "Q3_case_sensitivity": {
+    "description": "Distinct assays under case-sensitive vs case-insensitive standard_type match (no IS NOT NULL filter, matching paper's counting method)",
+    "case_sensitive_count": 2889,
+    "case_insensitive_count": 2892,
+    "extra_assays_from_ci": [
+      {
+        "standard_type": "logD",
+        "n_assays": 3
+      }
+    ],
+    "delta": 3,
+    "paper_states_2889": true,
+    "alternative_count_2892": true,
+    "context_cs_with_not_null_filter": 2867,
+    "context_assays_with_only_null_values": 22,
+    "note": "22 assays have only NULL standard_value; excluding them gives CS=2867. Paper's 2889 includes these 22. The extra type string caught by CI is 'logD' (3 assays). The delta of 3 is confirmed."
+  },
+  "Q4_unmatched_17": {
+    "description": "17 benchmark rows absent from assay 1369278",
+    "n_total_unmatched": 17,
+    "n_not_in_chembl": 5,
+    "chembl_ids_not_resolved": [
+      "CHEMBL1169880",
+      "CHEMBL1369407",
+      "CHEMBL2110569",
+      "CHEMBL522505",
+      "CHEMBL97"
+    ],
+    "n_resolves_but_not_in_assay": 12,
+    "resolved_detail": [
+      {
+        "chembl_id": "CHEMBL115",
+        "bench_y": 2.9,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL1421",
+        "bench_y": 3.41,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL1625467",
+        "bench_y": 3.22,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL177756",
+        "bench_y": 0.0,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL190",
+        "bench_y": -0.09,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL315157",
+        "bench_y": 3.04,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL33",
+        "bench_y": -0.35,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL387675",
+        "bench_y": -0.94,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL440464",
+        "bench_y": 0.5,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL51697",
+        "bench_y": 2.11,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL560739",
+        "bench_y": 3.56,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      },
+      {
+        "chembl_id": "CHEMBL9751",
+        "bench_y": -0.09,
+        "resolves": true,
+        "n_logd_any_assay": 0
+      }
+    ]
+  }
+}
